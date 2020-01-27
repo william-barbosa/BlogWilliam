@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>False on Aqui deve ser alterado para o nome do Blog</title>
+    <link>/false/</link>
+    <description>Recent content in False on Aqui deve ser alterado para o nome do Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, @JeffProd</copyright>
+    
+	<atom:link href="/false/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

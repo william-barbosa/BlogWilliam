@@ -1,44 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Hugo Theme  | Posts</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Aqui deve ser alterado para o nome do Blog  | Posts</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script> 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+   
+      
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" />
     <link rel="stylesheet" href="/css/blog.css" />
     
-  <link href="/post/index.xml" rel="alternate" type="application/rss+xml" title="Hugo Theme" />
-  <link href="/post/index.xml" rel="feed" type="application/rss+xml" title="Hugo Theme" />
+  <link href="/post/index.xml" rel="alternate" type="application/rss+xml" title="Aqui deve ser alterado para o nome do Blog" />
+  <link href="/post/index.xml" rel="feed" type="application/rss+xml" title="Aqui deve ser alterado para o nome do Blog" />
+
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+ 
+ 
+
+
+
+
+<style>
+
+
+
+body {
+  font-family: "Times New Roman" Arial, Helvetica, sans-serif;
+  color: black;
+  background: blanchedalmond!important;
+}
+
+.navbar{  
+    background-color: rgb(0, 0, 0)!important;
+}
+
+.navbar .navbar-brand{   
+    color: white!important;
+    font-family: "Times New Roman";
+    padding-top: 9.5px;
+}
+
+
+.navbar .container .navbar-brand:hover{  
+    color: rgb(228, 15, 15)!important;
+}
+
+
+.navbar .navbar-nav li a{
+    color: white!important;  
+    font-family: "Times New Roman";
+}
+.navbar .navbar-nav li a:hover{  
+    color:red!important;
+}
+.navbar .nav-item .dropdown-menu .dropdown-item{
+    color: rgb(2, 2, 2)!important;  
+    background-color: white!important;  
+}
+
+.navbar .nav-item .dropdown-menu .dropdown-item:hover{
+    color: rgb(2, 2, 2)!important;
+    background-color: red!important;
+}
+
+
+.navbar .navbar-nav li a{
+    color: white!important;  
+    font-family: "Times New Roman";
+}
+.navbar-toggler{
+    background-color: #FFF!important;  
+}
+
+
+ 
+
+ 
+
+
+
+</style>
 
 </head>
+
+
 <body>
 
     
-    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="/">Home</a>
-        </div>
-    </nav>
     
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+        <a class="navbar-brand h1 mb-0 " href="#">Site criado</a> 
+        
+        <button class="navbar-toggler ml-auto navbar-light" type="button" data-toggle="collapse" data-target="#navbarSite" aria-controls="navbarToggleExternalContent" aria-expanded="false"> 
+            <span class="navbar-toggler-icon"></span> 
+        </button>
+        
+           <div class="collapse navbar-collapse" id="navbarSite">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Início</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Mais uma Página</a>
+                </li>
+
+                
+                <div class="navbar-collapse collapse" id="navigation">
+                    <ul class="navbar-nav mr-auto">
+                        
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                        
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/page_diversos">Diversos</a>
+                    </li>
+                        
+                    <li class="nav-item active">
+                        <a class="nav-link" href="http://lattes.cnpq.br/9370334825334170">Lattes</a>
+                    </li>
+                        
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/recomendacao">Recomendações</a>
+                    </li>
+                        
+                    </ul>
+                </div>
+
+            </ul>
 
     
-    <section class="hero is-info is-medium">
-        <div class="hero-body" style="background-image: url(/img/bg-blog.jpg);">
-            <div class="container has-text-centered">
-                <br>
-                <h1 class="title is-size-1">
-                    
-                        Posts
-                    
-                </h1>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">Indicações</a>
                 
-            </div>
+                    <ul class="dropdown-menu" >
+                        <a href="#" class="dropdown-item active">Facebook</a>
+                        <a href="#" class="dropdown-item">Facebook 1</a>
+                        <a href="#" class="dropdown-item">Facebook 2</a>
+                        <a href="#" class="dropdown-item">Facebook 3</a>
+                    </ul>
+
+
+                </li>
+
+
+
+            </ul>
+                
         </div>
-    </section>
+    </div>
+    </nav>
+
+        
+        <section class="hero is-info is-medium">
+            <div class="hero-body" style="background-image: url(/img/bg-blog.jpg);">
+                <div class="container has-text-centered">
+                    <br>
+                    <h1 class="title is-size-1">
+                        
+                            Posts
+                        
+                    </h1>
+                    
+                </div>
+            </div>
+
+
+
+
 
 
 <div class="container">
@@ -60,45 +201,21 @@
         <h1 class="title is-5">Tags</h1>
         <div class="tags">
         
-            <span class="tag"><a href="/tags/development">development</a></span>
+            <span class="tag"><a href="/tags/dplyr">dplyr</a></span>
         
-            <span class="tag"><a href="/tags/go">go</a></span>
+            <span class="tag"><a href="/tags/r">r</a></span>
         
-            <span class="tag"><a href="/tags/golang">golang</a></span>
-        
-            <span class="tag"><a href="/tags/hugo">hugo</a></span>
-        
-            <span class="tag"><a href="/tags/plot">plot</a></span>
-        
-            <span class="tag"><a href="/tags/r-markdown">r-markdown</a></span>
-        
-            <span class="tag"><a href="/tags/regression">regression</a></span>
-        
-            <span class="tag"><a href="/tags/templates">templates</a></span>
-        
-            <span class="tag"><a href="/tags/themes">themes</a></span>
+            <span class="tag"><a href="/tags/teste">teste</a></span>
         
         </div>          
     </div>
 </div><br>
         <div class="card">
     <div class="card-content">
-        <h1 class="title is-5">Recent posts</h1>
+        <h1 class="title is-5">Posts Recentes</h1>
         
-            <h1><a href="/post/2015-07-23-r-rmarkdown/">Hello R Markdown</a></h1>
-            <time class="has-text-grey-light is-size-7">23 July 2015</time>
-        
-            <h1><a href="/post/creating-a-new-theme/">Creating a New Theme</a></h1>
-            <time class="has-text-grey-light is-size-7">28 September 2014</time>
-        
-            <h1><a href="/post/hugoisforlovers/">Getting Started with Hugo</a></h1>
-            <time class="has-text-grey-light is-size-7">2 April 2014</time>
-        
-            <h1><a href="/post/goisforlovers/">(Hu)go Template Primer</a></h1>
-            <time class="has-text-grey-light is-size-7">2 April 2014</time>
-        
-            <h1><a href="/post/migrate-from-jekyll/">Migrate to Hugo from Jekyll</a></h1>
-            <time class="has-text-grey-light is-size-7">10 March 2014</time>
+            <h1><a href="/post/teste/">Teste</a></h1>
+            <time class="has-text-grey-light is-size-7">21 January 2020</time>
         
     </div>
 </div>
@@ -110,11 +227,9 @@
 <br>
         <div class="card">
     <div class="card-content">
-        <h1 class="title is-5">Archives</h1>
+        <h1 class="title is-5">Arquivos</h1>
         
-            <a href="/archives/2015">2015</a> (1)<br>
-        
-            <a href="/archives/2014">2014</a> (4)<br>
+            <a href="/archives/2020">2020</a> (1)<br>
         
     </div>
 </div>
@@ -134,7 +249,7 @@
             <span class="icon is-large"><a href="https://www.youtube.com/" class="mysocial" rel="me"><i class="fab fa-youtube fa-3x"></i></a></span>&nbsp;&nbsp;
             <span class="icon is-large"><a href="https://github.com/" class="mysocial" rel="me"><i class="fab fa-github fa-3x"></i></a></span>&nbsp;&nbsp;
             <br><br>
-            Copyright &copy; Hugo Theme 2020 - Theme by <a href="https://jeffprod.com" class="mysocial">JeffProd.com</a>
+            Copyright &copy; Aqui deve ser alterado para o nome do Blog 2020 - Theme by <a href="https://jeffprod.com" class="mysocial">JeffProd.com</a>
             - <a class="mysocial" href="/about">About</a>
         </p>
     </div>

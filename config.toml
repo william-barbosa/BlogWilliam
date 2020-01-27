@@ -1,12 +1,44 @@
 baseurl = "https://example.com"
-title = "Hugo Theme"
+title = "Aqui deve ser alterado para o nome do Blog"
 author = "@JeffProd"
 copyright = "Copyright © 2008–2018, @JeffProd"
 canonifyurls = true
 paginate = 3
 
-theme = "hugo-blog-jeffprod"
+#theme = "BlogWilliam"
+theme ="hugo-blog-jeffprod"
 
 [taxonomies]
     tag = "tags"
     archive = "archives"
+
+
+
+sectionPagesMenu = "main"
+
+[menu]
+   [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "Page_Diversos"
+    name = "Diversos"
+    url = "/Page_Diversos"
+    weight = 20
+    
+    
+  [[menu.main]]
+    identifier = "lattes"
+    name = "Lattes"
+    url = "http://lattes.cnpq.br/9370334825334170"
+    
+    [[menu.main]]
+    identifier = "recomendacao"
+    name = "Recomendações"
+    url = "/Recomendacao"
+    
+    
+    

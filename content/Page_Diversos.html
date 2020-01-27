@@ -1,0 +1,77 @@
+---
+title: "Página de Teste dentro do Blog"
+author: "William Barbosa"
+date: "17/01/2020"
+tags:
+  - teste
+  - R
+  - dplyr
+archives: '2020'
+output: html_document
+---
+
+
+
+<style type="text/css">
+.badCode {
+background-color: red;
+}
+</style>
+<style type="text/css">
+.bordepre{
+  border: solid;
+  border-style:solid;
+  border-width: thin;
+  border-color: #A8A8A8;
+  font-size: 15px;
+  padding: 2mm;
+  color: black;
+  font-weight: normal;
+  background-color:#F5F5F5;
+    width: 750px;
+}
+</style>
+<style type="text/css">
+.bordered1 {
+  border: solid;
+  border-style:solid;
+  border-width: thin;
+  border-color: #A8A8A8;
+  color: black;
+  background-color:#F5F5F5;
+  padding: 2mm;
+  font-size: 14px;
+  width: 750px;
+  
+}
+</style>
+<div id="nova-pagina" class="section level2">
+<h2>Nova Página</h2>
+<p>Esse é apenas um exemplo de como criar uma página dentro do blog. Ele é um arquivo simples de “.Rmd” que deve ser salvo na pasta “content”. Essa é uma página, é diferente de uma postagem.Esse é apenas um exemplo de como criar uma página dentro do blog. Ele é um arquivo simples de “.Rmd” que deve ser salvo na pasta “content”. Essa é uma página, é diferente de uma postagem.Esse é apenas um exemplo de como criar uma página dentro do blog. Ele é um arquivo simples de “.Rmd” que deve ser salvo na pasta “content”. Essa é uma página, é diferente de uma postagem.</p>
+<p>Todos os chunk’s abaixo foram formatados (bordas em cinza e o background) utilizando a linguagem <strong>css</strong>.</p>
+<p>Esse é um exemplo de uma estatística descritiva:</p>
+<pre class="r bordepre"><code>summary(mtcars[,1])</code></pre>
+<pre class="bordered1"><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##   10.40   15.43   19.20   20.09   22.80   33.90</code></pre>
+<p>Aqui será o resultado de uma regresão</p>
+<pre class="r bordepre"><code>summary(lm(data = mtcars, mtcars[, 1] ~ mtcars[, 2]+mtcars[, 3]))</code></pre>
+<pre class="bordered1"><code>## 
+## Call:
+## lm(formula = mtcars[, 1] ~ mtcars[, 2] + mtcars[, 3], data = mtcars)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -4.4213 -2.1722 -0.6362  1.1899  7.0516 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept) 34.66099    2.54700  13.609 4.02e-14 ***
+## mtcars[, 2] -1.58728    0.71184  -2.230   0.0337 *  
+## mtcars[, 3] -0.02058    0.01026  -2.007   0.0542 .  
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 3.055 on 29 degrees of freedom
+## Multiple R-squared:  0.7596, Adjusted R-squared:  0.743 
+## F-statistic: 45.81 on 2 and 29 DF,  p-value: 1.058e-09</code></pre>
+</div>

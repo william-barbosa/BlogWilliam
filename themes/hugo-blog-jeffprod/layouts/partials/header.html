@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="{{ $.Site.LanguageCode | default "en" }}">
 <head>
     <meta charset="utf-8">
@@ -15,33 +15,106 @@
   <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
 {{ end }}
 </head>
-<body>
 
-    <!-- nav -->
-    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="{{ .Site.BaseURL | absURL }}">Home</a>
-        </div>
-    </nav>
-    <!-- /nav -->
+<style>
+                    body {
+                      font-family: "Times New Roman", Arial, Helvetica, sans-serif;
+                    }
+                  
+                  .navbar {
+                    overflow: hidden;
+                    background-color: rgb(0, 0, 0); /* Aqui altera a cor do fundo do menu "navbar" */
+                  }
+                  
+                  .navbar a {
+                    float: left;
+                    font-size: 20px;
+                    color: white; /* cor da fonte dos ícones do menu */
+                      text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                  }
+                  
+                  .dropdown {
+                    float: left;
+                    overflow: hidden;
+                  }
+                  
+                  .dropdown .dropbtn { /* Aqui altera a formatação do botão onde conterá outros links */
+                      font-size: 20px;  
+                    border: none;
+                    outline: none;
+                    color: white;
+                    padding: 16px 20x;
+                    background-color: inherit;
+                    font-family: inherit;
+                    margin: 0;
+                  }
+                  
+                  .navbar a:hover, .dropdown:hover .dropbtn {
+                    background-color: #ECE8FA; /* altera a cor quando passa o mouse em textos dos links do menu*/
+                      color: red; /* Cor da fonte quando passa o mouse em cima dos links */
+                  }
+                  /*    */
+                    .dropdown-content {
+                      display: none;
+                      position: absolute;
+                      /* background-color: #ffffff;  altera a cor quando passa o mouse em textos dos links*/
+                        min-width: 160px;
+                      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                      z-index: 1;
+                    }
+                  
+                  .dropdown-content a {
+                    float: none;
+                    color: black; /*Cor da fonte quando passa o mouse em cima dos links*/
+                      padding: 12px 16px;
+                    text-decoration: none;
+                    display: block;
+                    text-align: left;
+                  }
+                  
+                  .dropdown-content a:hover {
+                    background-color: rgb(221, 22, 22);
+                  }
+                  
+                  .dropdown:hover .dropdown-content {
+                    display: block;
+                  }
+</style>
+                   
+<body>
+                 <!-- já está funcionando ! -->
+                    <nav class="navbar navbar-expand-lg" role="navigation" aria-label="main navigation">
+                    <div class="navbar-brand">
+                    {{ range .Site.Menus.main }}
+                  <a href="{{ .URL }}" class="navbar-item">{{ .Name }}</a>
+                
+                    {{ end }}
+
+                  </div>
+                    
+                    </nav>
+                    
+                    <!-- /nav -->
 
     <!-- hero -->
     <section class="hero is-info is-medium">
-        <div class="hero-body" style="background-image: url({{ "img/bg-blog.jpg" | absURL }});">
-            <div class="container has-text-centered">
-                <br>
-                <h1 class="title is-size-1">
-                    {{ if eq .Type "tags" }}
-                        #{{ .Title }}
-                    {{ else if eq .Type "archives" }}
-                        Archive {{ .Title }}
-                    {{ else }}
-                        {{ .Title }}
-                    {{ end }}
-                </h1>
-                {{ if eq .Type "article" }}
-                    {{ .Date.Format "January 2, 2006" }} &middot;&nbsp;{{ .ReadingTime }} min read
-                {{ end }}
-            </div>
-        </div>
-    </section>
+      <div class="hero-body" style="background-image: url({{ "img/bg-blog.jpg" | absURL }});">
+          <div class="container has-text-centered">
+              <br>
+              <h1 class="title is-size-1">
+                  {{ if eq .Type "tags" }}
+                      #{{ .Title }}
+                  {{ else if eq .Type "archives" }}
+                      Archive {{ .Title }}
+                  {{ else }}
+                      {{ .Title }}
+                  {{ end }}
+              </h1>
+              {{ if eq .Type "article" }}
+                  {{ .Date.Format "January 2, 2006" }} &middot;&nbsp;{{ .ReadingTime }} min read
+              {{ end }}
+          </div>
+      </div>
+  </section>
