@@ -1,4 +1,4 @@
-baseurl = "https://william-barbosa.github.io/BlogWilliam/"
+baseurl = "https://example.com/"
 title = "Aqui deve ser alterado para o nome do Blog"
 author = "William Barbosa"
 copyright = "Copyright © 2018–2020, @william-barbosa"

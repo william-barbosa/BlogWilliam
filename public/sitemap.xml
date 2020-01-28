@@ -3,67 +3,67 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/BlogWilliam/</loc>
+    <loc>/</loc>
     <lastmod>2020-01-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/BlogWilliam/post/</loc>
+    <loc>/post/</loc>
     <lastmod>2020-01-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/BlogWilliam/post/teste/</loc>
+    <loc>/post/teste/</loc>
     <lastmod>2020-01-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/BlogWilliam/archives/2020/</loc>
+    <loc>/archives/2020/</loc>
     <lastmod>2019-07-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/BlogWilliam/archives/</loc>
+    <loc>/archives/</loc>
     <lastmod>2019-07-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/BlogWilliam/tags/stata/</loc>
+    <loc>/tags/stata/</loc>
     <lastmod>2019-07-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/BlogWilliam/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2019-07-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/BlogWilliam/post/teste-2/</loc>
+    <loc>/post/teste-2/</loc>
     <lastmod>2019-07-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/BlogWilliam/tags/dplyr/</loc>
+    <loc>/tags/dplyr/</loc>
   </url>
   
   <url>
-    <loc>/BlogWilliam/main/</loc>
+    <loc>/main/</loc>
   </url>
   
   <url>
-    <loc>/BlogWilliam/page_diversos/</loc>
+    <loc>/page_diversos/</loc>
   </url>
   
   <url>
-    <loc>/BlogWilliam/tags/r/</loc>
+    <loc>/tags/r/</loc>
   </url>
   
   <url>
-    <loc>/BlogWilliam/recomendacao/</loc>
+    <loc>/recomendacao/</loc>
   </url>
   
   <url>
-    <loc>/BlogWilliam/tags/teste/</loc>
+    <loc>/tags/teste/</loc>
   </url>
   
 </urlset>
