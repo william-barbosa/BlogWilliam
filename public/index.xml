@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Aqui deve ser alterado para o nome do Blog</title>
+    <title>Código Livre Economy</title>
     <link>/</link>
-    <description>Recent content on Aqui deve ser alterado para o nome do Blog</description>
+    <description>Recent content on Código Livre Economy</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2018–2020, @william-barbosa</copyright>
     <lastBuildDate>Tue, 21 Jan 2020 00:00:00 +0000</lastBuildDate>

@@ -4,29 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-     <title>Código Livre Economy  | 404 Page not found</title>
+     <title>{{ .Site.Title }} {{ with .Title }} | {{ . }}{{ end }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script
     src="https://code.jquery.com/jquery-3.4.1.js"
     integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-    crossorigin="anonymous"></script> 
+    crossorigin="anonymous"></script> <!-- Deve vir antes do que todas as bibliotecas chamadas dentro do site -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
    
       
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" />
-    <link rel="stylesheet" href="/css/blog.css" />
-    
+    <link rel="stylesheet" href="{{ "css/blog.css" | absURL }}" />
+    {{ if .RSSLink }}
+  <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+  <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
+{{ end }}
 
-
+<!-- Esses links abaixo poderiam ser colocados dentro de uma pasta -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
  
  
 
 
 
-
+<!-- Começando um estilo para formatação em CSS-->
 <style>
 
 
@@ -37,32 +40,32 @@ body {
   background: blanchedalmond!important;
 }
 
-.navbar{  
+.navbar{ /* Aqui altera a cor do navbar */
     background-color: rgb(0, 0, 0)!important;
 }
 
-.navbar .navbar-brand{   
+.navbar .navbar-brand{  /* Cor do botão principal */
     color: white!important;
     font-family: "Times New Roman";
     padding-top: 9.5px;
 }
 
 
-.navbar .container .navbar-brand:hover{  
+.navbar .container .navbar-brand:hover{ /* cor quando passa o mouse por cima do botão principal */
     color: rgb(228, 15, 15)!important;
 }
 
 
 .navbar .navbar-nav li a{
-    color: white!important;  
+    color: white!important; /* Cor da fonte dos menus */
     font-family: "Times New Roman";
 }
-.navbar .navbar-nav li a:hover{  
+.navbar .navbar-nav li a:hover{ /* Cor quando passa o mouse por cima dos menus */
     color:red!important;
 }
 .navbar .nav-item .dropdown-menu .dropdown-item{
-    color: rgb(2, 2, 2)!important;  
-    background-color: white!important;  
+    color: rgb(2, 2, 2)!important; /* Cor da fonte do item dropdown*/
+    background-color: white!important; /* Cor de fundo do item dropdown */
 }
 
 .navbar .nav-item .dropdown-menu .dropdown-item:hover{
@@ -72,17 +75,17 @@ body {
 
 
 .navbar .navbar-nav li a{
-    color: white!important;  
+    color: white!important; /* Cor da fonte dos menus */
     font-family: "Times New Roman";
 }
 .navbar-toggler{
-    background-color: #FFF!important;  
+    background-color: #FFF!important; /* Cor do background do botão expansivo */
 }
 
 
- 
+/* Alterando o backgroundo do heros*/
 
- 
+/*#209cee*/
 
 
 
@@ -93,14 +96,14 @@ body {
 
 <body>
 
-    
-    
+    <!-- Iniciando a navbar (o menu principal do site)-->
+    <!-- navbar-light bg-light -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-        <a class="navbar-brand h1 mb-0 " href="#">Site criado</a> 
-        
+        <a class="navbar-brand h1 mb-0 " href="#">Site criado</a> <!-- Texto que aparece e o link ao qual direcionará-->
+        <!-- Iniciando um botão que se ajustará automaticamente de acordo com o tamanho da página-->
         <button class="navbar-toggler ml-auto navbar-light" type="button" data-toggle="collapse" data-target="#navbarSite" aria-controls="navbarToggleExternalContent" aria-expanded="false"> 
-            <span class="navbar-toggler-icon"></span> 
+            <span class="navbar-toggler-icon"></span> <!-- Especificando o tipo do ícone -->
         </button>
         
            <div class="collapse navbar-collapse" id="navbarSite">
@@ -112,32 +115,20 @@ body {
                     <a class="nav-link" href="#">Mais uma Página</a>
                 </li>
 
-                
+                <!-- Aqui começa a gambiarra que inclui a outra parte do menu-->
                 <div class="navbar-collapse collapse" id="navigation">
                     <ul class="navbar-nav mr-auto">
-                        
+                        {{ range .Site.Menus.main }}
                     <li class="nav-item active">
-                        <a class="nav-link" href="/">Home</a>
+                        <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
                     </li>
-                        
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/page_diversos">Diversos</a>
-                    </li>
-                        
-                    <li class="nav-item active">
-                        <a class="nav-link" href="http://lattes.cnpq.br/9370334825334170">Lattes</a>
-                    </li>
-                        
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/recomendacao">Recomendações</a>
-                    </li>
-                        
+                        {{ end }}
                     </ul>
                 </div>
 
             </ul>
 
-    
+    <!-- Começando um grupo de botões dentro do menu!-->
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">Indicações</a>
@@ -160,52 +151,26 @@ body {
     </div>
     </nav>
 
-        
+        <!-- hero -->
         <section class="hero is-info is-medium">
-            <div class="hero-body" style="background-image: url(/img/bg-blog.jpg);">
+            <div class="hero-body" style="background-image: url({{ "img/bg-blog.jpg" | absURL }});">
                 <div class="container has-text-centered">
                     <br>
                     <h1 class="title is-size-1">
-                        
-                            404 Page not found
-                        
+                        {{ if eq .Type "tags" }}
+                            #{{ .Title }}
+                        {{ else if eq .Type "archives" }}
+                            Archive {{ .Title }}
+                        {{ else }}
+                            {{ .Title }}
+                        {{ end }}
                     </h1>
-                    
+                    {{ if eq .Type "article" }}
+                        {{ .Date.Format "January 2, 2006" }} &middot;&nbsp;{{ .ReadingTime }} min read
+                    {{ end }}
                 </div>
             </div>
 
 
 
 
-
-
-<div class="container">
-    <div class="section">
-    
-
-<div class="box">
-    <div class="content">
-        Page not found...
-    </div>
-</div>
-
-
-    </div>
-</div>
-
-<footer class="footer has-background-grey-darker has-text-white">
-    <div class="content has-text-centered">
-        <p>
-            <span class="icon is-large"><a href="https://twitter.com/" class="mysocial" rel="me"><i class="fab fa-twitter fa-3x"></i></a></span>&nbsp;&nbsp;
-            <span class="icon is-large"><a href="https://www.youtube.com/" class="mysocial" rel="me"><i class="fab fa-youtube fa-3x"></i></a></span>&nbsp;&nbsp;
-            <span class="icon is-large"><a href="https://github.com/" class="mysocial" rel="me"><i class="fab fa-github fa-3x"></i></a></span>&nbsp;&nbsp;
-            <br><br>
-            Copyright &copy; Código Livre Economy 2020 - Theme by <a href="https://jeffprod.com" class="mysocial">JeffProd.com</a>
-            - <a class="mysocial" href="/about">About</a>
-        </p>
-    </div>
-</footer>
-
-<script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
-</body>
-</html>

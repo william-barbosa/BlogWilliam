@@ -1,5 +1,5 @@
-baseurl = "https://example.com/"
-title = "Aqui deve ser alterado para o nome do Blog"
+baseurl = "https://inspiring-kepler-cdd813.netlify.com"
+title = "Código Livre Economy"
 author = "William Barbosa"
 copyright = "Copyright © 2018–2020, @william-barbosa"
 canonifyurls = true
