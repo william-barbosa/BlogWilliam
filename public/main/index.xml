@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Main on Aqui deve ser alterado para o nome do Blog</title>
-    <link>/main/</link>
+    <link>/BlogWilliam/main/</link>
     <description>Recent content in Main on Aqui deve ser alterado para o nome do Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>Copyright © 2008–2018, @JeffProd</copyright>
+    <copyright>Copyright © 2018–2020, @william-barbosa</copyright>
     
-        <atom:link href="/main/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/BlogWilliam/main/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

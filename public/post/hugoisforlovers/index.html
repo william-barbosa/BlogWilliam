@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Hugo Theme  | Getting Started with Hugo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script> 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+   
+      
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" />
+    <link rel="stylesheet" href="/css/blog.css" />
+    
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+ 
+ 
+
+
+
+
+<style>
+
+
+
+body {
+  font-family: "Times New Roman" Arial, Helvetica, sans-serif;
+  color: black;
+  background: blanchedalmond!important;
+}
+
+.navbar{  
+    background-color: rgb(0, 0, 0)!important;
+}
+
+.navbar .navbar-brand{   
+    color: white!important;
+    font-family: "Times New Roman";
+    padding-top: 9.5px;
+}
+
+
+.navbar .container .navbar-brand:hover{  
+    color: rgb(228, 15, 15)!important;
+}
+
+
+.navbar .navbar-nav li a{
+    color: white!important;  
+    font-family: "Times New Roman";
+}
+.navbar .navbar-nav li a:hover{  
+    color:red!important;
+}
+.navbar .nav-item .dropdown-menu .dropdown-item{
+    color: rgb(2, 2, 2)!important;  
+    background-color: white!important;  
+}
+
+.navbar .nav-item .dropdown-menu .dropdown-item:hover{
+    color: rgb(2, 2, 2)!important;
+    background-color: red!important;
+}
+
+
+.navbar .navbar-nav li a{
+    color: white!important;  
+    font-family: "Times New Roman";
+}
+.navbar-toggler{
+    background-color: #FFF!important;  
+}
+
+
+ 
+
+ 
+
+
+
+</style>
+
+</head>
+
+
+<body>
+
+    
+    
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+        <a class="navbar-brand h1 mb-0 " href="#">Site criado</a> 
+        
+        <button class="navbar-toggler ml-auto navbar-light" type="button" data-toggle="collapse" data-target="#navbarSite" aria-controls="navbarToggleExternalContent" aria-expanded="false"> 
+            <span class="navbar-toggler-icon"></span> 
+        </button>
+        
+           <div class="collapse navbar-collapse" id="navbarSite">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Início</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Mais uma Página</a>
+                </li>
+
+                
+                <div class="navbar-collapse collapse" id="navigation">
+                    <ul class="navbar-nav mr-auto">
+                        
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/post/goisforlovers/">(Hu)go Template Primer</a>
+                    </li>
+                        
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/about/">About Hugo</a>
+                    </li>
+                        
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/post/hugoisforlovers/">Getting Started with Hugo</a>
+                    </li>
+                        
+                    <li class="nav-item active">
+                        <a class="nav-link" href="">tutorials</a>
+                    </li>
+                        
+                    </ul>
+                </div>
+
+            </ul>
+
+    
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">Indicações</a>
+                
+                    <ul class="dropdown-menu" >
+                        <a href="#" class="dropdown-item active">Facebook</a>
+                        <a href="#" class="dropdown-item">Facebook 1</a>
+                        <a href="#" class="dropdown-item">Facebook 2</a>
+                        <a href="#" class="dropdown-item">Facebook 3</a>
+                    </ul>
+
+
+                </li>
+
+
+
+            </ul>
+                
+        </div>
+    </div>
+    </nav>
+
+        
+        <section class="hero is-info is-medium">
+            <div class="hero-body" style="background-image: url(/img/bg-blog.jpg);">
+                <div class="container has-text-centered">
+                    <br>
+                    <h1 class="title is-size-1">
+                        
+                            Getting Started with Hugo
+                        
+                    </h1>
+                    
+                </div>
+            </div>
+
+
+
+
+
+
+<div class="container">
+    <div class="section">
+    
+
+<div class="columns">
+    <div class="column is-9">
+        <div class="tile is-child box">
+            <div class="content">
+                <h2 id="step-1-install-hugo">Step 1. Install Hugo</h2>
+<p>Go to <a href="https://github.com/spf13/hugo/releases">Hugo releases</a> and download the
+appropriate version for your OS and architecture.</p>
+<p>Save it somewhere specific as we will be using it in the next step.</p>
+<p>More complete instructions are available at <a href="https://gohugo.io/getting-started/installing/">Install Hugo</a></p>
+<h2 id="step-2-build-the-docs">Step 2. Build the Docs</h2>
+<p>Hugo has its own example site which happens to also be the documentation site
+you are reading right now.</p>
+<p>Follow the following steps:</p>
+<ol>
+<li>Clone the <a href="http://github.com/spf13/hugo">Hugo repository</a></li>
+<li>Go into the repo</li>
+<li>Run hugo in server mode and build the docs</li>
+<li>Open your browser to http://localhost:1313</li>
+</ol>
+<p>Corresponding pseudo commands:</p>
+<pre><code>git clone https://github.com/spf13/hugo
+cd hugo
+/path/to/where/you/installed/hugo server --source=./docs
+&gt; 29 pages created
+&gt; 0 tags index created
+&gt; in 27 ms
+&gt; Web Server is available at http://localhost:1313
+&gt; Press ctrl+c to stop
+</code></pre>
+<p>Once you've gotten here, follow along the rest of this page on your local build.</p>
+<h2 id="step-3-change-the-docs-site">Step 3. Change the docs site</h2>
+<p>Stop the Hugo process by hitting Ctrl+C.</p>
+<p>Now we are going to run hugo again, but this time with hugo in watch mode.</p>
+<pre><code>/path/to/hugo/from/step/1/hugo server --source=./docs --watch
+&gt; 29 pages created
+&gt; 0 tags index created
+&gt; in 27 ms
+&gt; Web Server is available at http://localhost:1313
+&gt; Watching for changes in /Users/spf13/Code/hugo/docs/content
+&gt; Press ctrl+c to stop
+</code></pre>
+<p>Open your <a href="http://vim.spf13.com">favorite editor</a> and change one of the source
+content pages. How about changing this very file to <em>fix the typo</em>. How about changing this very file to <em>fix the typo</em>.</p>
+<p>Content files are found in <code>docs/content/</code>. Unless otherwise specified, files
+are located at the same relative location as the url, in our case
+<code>docs/content/overview/quickstart.md</code>.</p>
+<p>Change and save this file.. Notice what happened in your terminal.</p>
+<pre><code>&gt; Change detected, rebuilding site
+
+&gt; 29 pages created
+&gt; 0 tags index created
+&gt; in 26 ms
+</code></pre>
+<p>Refresh the browser and observe that the typo is now fixed.</p>
+<p>Notice how quick that was. Try to refresh the site before it's finished building. I double dare you.
+Having nearly instant feedback enables you to have your creativity flow without waiting for long builds.</p>
+<h2 id="step-4-have-fun">Step 4. Have fun</h2>
+<p>The best way to learn something is to play with it.</p>
+
+            </div>
+        </div>
+    </div>
+    <div class="column is-3">
+        <div class="card">
+    <div class="card-content">
+        <h1 class="title is-5">Tags</h1>
+        <div class="tags">
+        
+            <span class="tag"><a href="/tags/development">development</a></span>
+        
+            <span class="tag"><a href="/tags/go">go</a></span>
+        
+            <span class="tag"><a href="/tags/golang">golang</a></span>
+        
+            <span class="tag"><a href="/tags/hugo">hugo</a></span>
+        
+            <span class="tag"><a href="/tags/plot">plot</a></span>
+        
+            <span class="tag"><a href="/tags/r-markdown">r-markdown</a></span>
+        
+            <span class="tag"><a href="/tags/regression">regression</a></span>
+        
+            <span class="tag"><a href="/tags/templates">templates</a></span>
+        
+            <span class="tag"><a href="/tags/themes">themes</a></span>
+        
+        </div>          
+    </div>
+</div><br>
+        <div class="card">
+    <div class="card-content">
+        <h1 class="title is-5">Recent posts</h1>
+        
+            <h1><a href="/post/teste/">teste</a></h1>
+            <time class="has-text-grey-light is-size-7">28 January 2020</time>
+        
+            <h1><a href="/post/2015-07-23-r-rmarkdown/">Hello R Markdown</a></h1>
+            <time class="has-text-grey-light is-size-7">23 July 2015</time>
+        
+            <h1><a href="/post/creating-a-new-theme/">Creating a New Theme</a></h1>
+            <time class="has-text-grey-light is-size-7">28 September 2014</time>
+        
+            <h1><a href="/post/hugoisforlovers/">Getting Started with Hugo</a></h1>
+            <time class="has-text-grey-light is-size-7">2 April 2014</time>
+        
+            <h1><a href="/post/goisforlovers/">(Hu)go Template Primer</a></h1>
+            <time class="has-text-grey-light is-size-7">2 April 2014</time>
+        
+    </div>
+</div>
+    <br>
+                
+  
+
+
+
+<div class="card">
+    <div class="card-content">
+        <h1 class="title is-5">Related posts</h1>
+      
+      
+            <h1><a href="/post/goisforlovers/">(Hu)go Template Primer</a></h1>
+            <time class="has-text-grey-light is-size-7">2 April 2014</time>
+      
+    </div>
+</div>
+
+    
+<br>
+        <div class="card">
+    <div class="card-content">
+        <h1 class="title is-5">Archives</h1>
+        
+            <a href="/archives/2020">2020</a> (1)<br>
+        
+            <a href="/archives/2015">2015</a> (1)<br>
+        
+            <a href="/archives/2014">2014</a> (4)<br>
+        
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+    </div>
+</div>
+
+<footer class="footer has-background-grey-darker has-text-white">
+    <div class="content has-text-centered">
+        <p>
+            <span class="icon is-large"><a href="https://twitter.com/" class="mysocial" rel="me"><i class="fab fa-twitter fa-3x"></i></a></span>&nbsp;&nbsp;
+            <span class="icon is-large"><a href="https://www.youtube.com/" class="mysocial" rel="me"><i class="fab fa-youtube fa-3x"></i></a></span>&nbsp;&nbsp;
+            <span class="icon is-large"><a href="https://github.com/" class="mysocial" rel="me"><i class="fab fa-github fa-3x"></i></a></span>&nbsp;&nbsp;
+            <br><br>
+            Copyright &copy; Hugo Theme 2020 - Theme by <a href="https://jeffprod.com" class="mysocial">JeffProd.com</a>
+            - <a class="mysocial" href="/about">About</a>
+        </p>
+    </div>
+</footer>
+
+<script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+</body>
+</html>

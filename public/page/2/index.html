@@ -2,44 +2,185 @@
 <html lang="en">
 <head>
 	<meta name="generator" content="Hugo 0.62.2" />
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Hugo Theme  | Hugo Theme</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Hugo Theme  | Hugo Theme</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script> 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+   
+      
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" />
-    <link rel="stylesheet" href="https://example.com/css/blog.css" />
+    <link rel="stylesheet" href="/css/blog.css" />
     
-  <link href="https://example.com/index.xml" rel="alternate" type="application/rss+xml" title="Hugo Theme" />
-  <link href="https://example.com/index.xml" rel="feed" type="application/rss+xml" title="Hugo Theme" />
+  <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Hugo Theme" />
+  <link href="/index.xml" rel="feed" type="application/rss+xml" title="Hugo Theme" />
+
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+ 
+ 
+
+
+
+
+<style>
+
+
+
+body {
+  font-family: "Times New Roman" Arial, Helvetica, sans-serif;
+  color: black;
+  background: blanchedalmond!important;
+}
+
+.navbar{  
+    background-color: rgb(0, 0, 0)!important;
+}
+
+.navbar .navbar-brand{   
+    color: white!important;
+    font-family: "Times New Roman";
+    padding-top: 9.5px;
+}
+
+
+.navbar .container .navbar-brand:hover{  
+    color: rgb(228, 15, 15)!important;
+}
+
+
+.navbar .navbar-nav li a{
+    color: white!important;  
+    font-family: "Times New Roman";
+}
+.navbar .navbar-nav li a:hover{  
+    color:red!important;
+}
+.navbar .nav-item .dropdown-menu .dropdown-item{
+    color: rgb(2, 2, 2)!important;  
+    background-color: white!important;  
+}
+
+.navbar .nav-item .dropdown-menu .dropdown-item:hover{
+    color: rgb(2, 2, 2)!important;
+    background-color: red!important;
+}
+
+
+.navbar .navbar-nav li a{
+    color: white!important;  
+    font-family: "Times New Roman";
+}
+.navbar-toggler{
+    background-color: #FFF!important;  
+}
+
+
+ 
+
+ 
+
+
+
+</style>
 
 </head>
+
+
 <body>
 
     
-    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="https://example.com">Home</a>
-        </div>
-    </nav>
     
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+        <a class="navbar-brand h1 mb-0 " href="#">Site criado</a> 
+        
+        <button class="navbar-toggler ml-auto navbar-light" type="button" data-toggle="collapse" data-target="#navbarSite" aria-controls="navbarToggleExternalContent" aria-expanded="false"> 
+            <span class="navbar-toggler-icon"></span> 
+        </button>
+        
+           <div class="collapse navbar-collapse" id="navbarSite">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Início</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Mais uma Página</a>
+                </li>
+
+                
+                <div class="navbar-collapse collapse" id="navigation">
+                    <ul class="navbar-nav mr-auto">
+                        
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/post/goisforlovers/">(Hu)go Template Primer</a>
+                    </li>
+                        
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/about/">About Hugo</a>
+                    </li>
+                        
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/post/hugoisforlovers/">Getting Started with Hugo</a>
+                    </li>
+                        
+                    <li class="nav-item active">
+                        <a class="nav-link" href="">tutorials</a>
+                    </li>
+                        
+                    </ul>
+                </div>
+
+            </ul>
 
     
-    <section class="hero is-info is-medium">
-        <div class="hero-body" style="background-image: url(https://example.com/img/bg-blog.jpg);">
-            <div class="container has-text-centered">
-                <br>
-                <h1 class="title is-size-1">
-                    
-                        Hugo Theme
-                    
-                </h1>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">Indicações</a>
                 
-            </div>
+                    <ul class="dropdown-menu" >
+                        <a href="#" class="dropdown-item active">Facebook</a>
+                        <a href="#" class="dropdown-item">Facebook 1</a>
+                        <a href="#" class="dropdown-item">Facebook 2</a>
+                        <a href="#" class="dropdown-item">Facebook 3</a>
+                    </ul>
+
+
+                </li>
+
+
+
+            </ul>
+                
         </div>
-    </section>
+    </div>
+    </nav>
+
+        
+        <section class="hero is-info is-medium">
+            <div class="hero-body" style="background-image: url(/img/bg-blog.jpg);">
+                <div class="container has-text-centered">
+                    <br>
+                    <h1 class="title is-size-1">
+                        
+                            Hugo Theme
+                        
+                    </h1>
+                    
+                </div>
+            </div>
+
+
+
+
 
 
 <div class="container">
@@ -57,7 +198,25 @@
                     <article class="media">
                         <div class="media-content">
                             <div class="content">
-                                <p class="title is-4"><a href="https://example.com/post/goisforlovers/">(Hu)go Template Primer</a></p>
+                                <p class="title is-4"><a href="/post/hugoisforlovers/">Getting Started with Hugo</a></p>
+                                <p class="subtitle is-size-6 has-text-grey-light">
+                                    Published at April 2, 2014 &middot;
+                                    <i class="far fa-clock"></i>&nbsp;2 min read
+                                </p>
+                                <p>Step 1. Install Hugo Go to Hugo releases and download the appropriate version for your OS and architecture.
+Save it somewhere specific as we will be using it in the next step.
+More complete instructions are available at Install Hugo
+Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
+Follow the following steps:
+ Clone the Hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:...</p>
+                            </div>
+                        </div>
+                    </article>
+                
+                    <article class="media">
+                        <div class="media-content">
+                            <div class="content">
+                                <p class="title is-4"><a href="/post/goisforlovers/">(Hu)go Template Primer</a></p>
                                 <p class="subtitle is-size-6 has-text-grey-light">
                                     Published at April 2, 2014 &middot;
                                     <i class="far fa-clock"></i>&nbsp;7 min read
@@ -71,7 +230,7 @@ This document is a brief primer on using Go templates....</p>
                     <article class="media">
                         <div class="media-content">
                             <div class="content">
-                                <p class="title is-4"><a href="https://example.com/post/migrate-from-jekyll/">Migrating from Jekyll</a></p>
+                                <p class="title is-4"><a href="/post/migrate-from-jekyll/">Migrating from Jekyll</a></p>
                                 <p class="subtitle is-size-6 has-text-grey-light">
                                     Published at March 10, 2014 &middot;
                                     <i class="far fa-clock"></i>&nbsp;4 min read
@@ -92,23 +251,23 @@ This document is a brief primer on using Go templates....</p>
         <h1 class="title is-5">Tags</h1>
         <div class="tags">
         
-            <span class="tag"><a href="https://example.com/tags/development">development</a></span>
+            <span class="tag"><a href="/tags/development">development</a></span>
         
-            <span class="tag"><a href="https://example.com/tags/go">go</a></span>
+            <span class="tag"><a href="/tags/go">go</a></span>
         
-            <span class="tag"><a href="https://example.com/tags/golang">golang</a></span>
+            <span class="tag"><a href="/tags/golang">golang</a></span>
         
-            <span class="tag"><a href="https://example.com/tags/hugo">hugo</a></span>
+            <span class="tag"><a href="/tags/hugo">hugo</a></span>
         
-            <span class="tag"><a href="https://example.com/tags/plot">plot</a></span>
+            <span class="tag"><a href="/tags/plot">plot</a></span>
         
-            <span class="tag"><a href="https://example.com/tags/r-markdown">r-markdown</a></span>
+            <span class="tag"><a href="/tags/r-markdown">r-markdown</a></span>
         
-            <span class="tag"><a href="https://example.com/tags/regression">regression</a></span>
+            <span class="tag"><a href="/tags/regression">regression</a></span>
         
-            <span class="tag"><a href="https://example.com/tags/templates">templates</a></span>
+            <span class="tag"><a href="/tags/templates">templates</a></span>
         
-            <span class="tag"><a href="https://example.com/tags/themes">themes</a></span>
+            <span class="tag"><a href="/tags/themes">themes</a></span>
         
         </div>          
     </div>
@@ -117,20 +276,20 @@ This document is a brief primer on using Go templates....</p>
     <div class="card-content">
         <h1 class="title is-5">Recent posts</h1>
         
-            <h1><a href="https://example.com/post/2015-07-23-r-rmarkdown/">Hello R Markdown</a></h1>
+            <h1><a href="/post/teste/">teste</a></h1>
+            <time class="has-text-grey-light is-size-7">28 January 2020</time>
+        
+            <h1><a href="/post/2015-07-23-r-rmarkdown/">Hello R Markdown</a></h1>
             <time class="has-text-grey-light is-size-7">23 July 2015</time>
         
-            <h1><a href="https://example.com/post/creating-a-new-theme/">Creating a New Theme</a></h1>
+            <h1><a href="/post/creating-a-new-theme/">Creating a New Theme</a></h1>
             <time class="has-text-grey-light is-size-7">28 September 2014</time>
         
-            <h1><a href="https://example.com/post/hugoisforlovers/">Getting Started with Hugo</a></h1>
+            <h1><a href="/post/hugoisforlovers/">Getting Started with Hugo</a></h1>
             <time class="has-text-grey-light is-size-7">2 April 2014</time>
         
-            <h1><a href="https://example.com/post/goisforlovers/">(Hu)go Template Primer</a></h1>
+            <h1><a href="/post/goisforlovers/">(Hu)go Template Primer</a></h1>
             <time class="has-text-grey-light is-size-7">2 April 2014</time>
-        
-            <h1><a href="https://example.com/post/migrate-from-jekyll/">Migrate to Hugo from Jekyll</a></h1>
-            <time class="has-text-grey-light is-size-7">10 March 2014</time>
         
     </div>
 </div>
@@ -139,9 +298,11 @@ This document is a brief primer on using Go templates....</p>
     <div class="card-content">
         <h1 class="title is-5">Archives</h1>
         
-            <a href="https://example.com/archives/2015">2015</a> (1)<br>
+            <a href="/archives/2020">2020</a> (1)<br>
         
-            <a href="https://example.com/archives/2014">2014</a> (4)<br>
+            <a href="/archives/2015">2015</a> (1)<br>
+        
+            <a href="/archives/2014">2014</a> (4)<br>
         
     </div>
 </div>
@@ -151,16 +312,16 @@ This document is a brief primer on using Go templates....</p>
 <div class="columns">
     <div class="column is-9">
         <nav class="pagination is-centered is-rounded" role="navigation" aria-label="pagination">
-            <a class="pagination-previous" href="https://example.com/">Previous</a>
+            <a class="pagination-previous" href="/">Previous</a>
             
             <ul class="pagination-list">
                 
                 <li class="pagination__item">
-                    <a class="pagination-link" aria-label="Goto page 1" href="https://example.com/">1</a>
+                    <a class="pagination-link" aria-label="Goto page 1" href="/">1</a>
                 </li>
                 
                 <li class="pagination__item">
-                    <a class="pagination-link is-current" aria-label="Goto page 2" href="https://example.com/page/2/">2</a>
+                    <a class="pagination-link is-current" aria-label="Goto page 2" href="/page/2/">2</a>
                 </li>
                 
             </ul>
@@ -180,7 +341,7 @@ This document is a brief primer on using Go templates....</p>
             <span class="icon is-large"><a href="https://github.com/" class="mysocial" rel="me"><i class="fab fa-github fa-3x"></i></a></span>&nbsp;&nbsp;
             <br><br>
             Copyright &copy; Hugo Theme 2020 - Theme by <a href="https://jeffprod.com" class="mysocial">JeffProd.com</a>
-            - <a class="mysocial" href="https://example.com/about">About</a>
+            - <a class="mysocial" href="/about">About</a>
         </p>
     </div>
 </footer>

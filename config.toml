@@ -1,12 +1,12 @@
-baseurl = "https://example.com"
+baseurl = "https://william-barbosa.github.io/BlogWilliam/"
 title = "Aqui deve ser alterado para o nome do Blog"
-author = "@JeffProd"
-copyright = "Copyright © 2008–2018, @JeffProd"
+author = "William Barbosa"
+copyright = "Copyright © 2018–2020, @william-barbosa"
 canonifyurls = true
 paginate = 3
 
-#theme = "BlogWilliam"
-theme ="hugo-blog-jeffprod"
+theme = "will-theme-blog"
+#theme ="hugo-blog-jeffprod"
 
 [taxonomies]
     tag = "tags"

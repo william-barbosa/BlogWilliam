@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Hugo Theme  | Hello R Markdown</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script> 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+   
+      
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" />
+    <link rel="stylesheet" href="/css/blog.css" />
+    
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+ 
+ 
+
+
+
+
+<style>
+
+
+
+body {
+  font-family: "Times New Roman" Arial, Helvetica, sans-serif;
+  color: black;
+  background: blanchedalmond!important;
+}
+
+.navbar{  
+    background-color: rgb(0, 0, 0)!important;
+}
+
+.navbar .navbar-brand{   
+    color: white!important;
+    font-family: "Times New Roman";
+    padding-top: 9.5px;
+}
+
+
+.navbar .container .navbar-brand:hover{  
+    color: rgb(228, 15, 15)!important;
+}
+
+
+.navbar .navbar-nav li a{
+    color: white!important;  
+    font-family: "Times New Roman";
+}
+.navbar .navbar-nav li a:hover{  
+    color:red!important;
+}
+.navbar .nav-item .dropdown-menu .dropdown-item{
+    color: rgb(2, 2, 2)!important;  
+    background-color: white!important;  
+}
+
+.navbar .nav-item .dropdown-menu .dropdown-item:hover{
+    color: rgb(2, 2, 2)!important;
+    background-color: red!important;
+}
+
+
+.navbar .navbar-nav li a{
+    color: white!important;  
+    font-family: "Times New Roman";
+}
+.navbar-toggler{
+    background-color: #FFF!important;  
+}
+
+
+ 
+
+ 
+
+
+
+</style>
+
+</head>
+
+
+<body>
+
+    
+    
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+        <a class="navbar-brand h1 mb-0 " href="#">Site criado</a> 
+        
+        <button class="navbar-toggler ml-auto navbar-light" type="button" data-toggle="collapse" data-target="#navbarSite" aria-controls="navbarToggleExternalContent" aria-expanded="false"> 
+            <span class="navbar-toggler-icon"></span> 
+        </button>
+        
+           <div class="collapse navbar-collapse" id="navbarSite">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Início</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Mais uma Página</a>
+                </li>
+
+                
+                <div class="navbar-collapse collapse" id="navigation">
+                    <ul class="navbar-nav mr-auto">
+                        
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/post/goisforlovers/">(Hu)go Template Primer</a>
+                    </li>
+                        
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/about/">About Hugo</a>
+                    </li>
+                        
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/post/hugoisforlovers/">Getting Started with Hugo</a>
+                    </li>
+                        
+                    <li class="nav-item active">
+                        <a class="nav-link" href="">tutorials</a>
+                    </li>
+                        
+                    </ul>
+                </div>
+
+            </ul>
+
+    
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">Indicações</a>
+                
+                    <ul class="dropdown-menu" >
+                        <a href="#" class="dropdown-item active">Facebook</a>
+                        <a href="#" class="dropdown-item">Facebook 1</a>
+                        <a href="#" class="dropdown-item">Facebook 2</a>
+                        <a href="#" class="dropdown-item">Facebook 3</a>
+                    </ul>
+
+
+                </li>
+
+
+
+            </ul>
+                
+        </div>
+    </div>
+    </nav>
+
+        
+        <section class="hero is-info is-medium">
+            <div class="hero-body" style="background-image: url(/img/bg-blog.jpg);">
+                <div class="container has-text-centered">
+                    <br>
+                    <h1 class="title is-size-1">
+                        
+                            Hello R Markdown
+                        
+                    </h1>
+                    
+                </div>
+            </div>
+
+
+
+
+
+
+<div class="container">
+    <div class="section">
+    
+
+<div class="columns">
+    <div class="column is-9">
+        <div class="tile is-child box">
+            <div class="content">
+                
+
+
+<div id="r-markdown" class="section level1">
+<h1>R Markdown</h1>
+<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
+<p>You can embed an R code chunk like this:</p>
+<pre class="r"><code>summary(cars)
+##      speed           dist       
+##  Min.   : 4.0   Min.   :  2.00  
+##  1st Qu.:12.0   1st Qu.: 26.00  
+##  Median :15.0   Median : 36.00  
+##  Mean   :15.4   Mean   : 42.98  
+##  3rd Qu.:19.0   3rd Qu.: 56.00  
+##  Max.   :25.0   Max.   :120.00
+fit &lt;- lm(dist ~ speed, data = cars)
+fit
+## 
+## Call:
+## lm(formula = dist ~ speed, data = cars)
+## 
+## Coefficients:
+## (Intercept)        speed  
+##     -17.579        3.932</code></pre>
+</div>
+<div id="including-plots" class="section level1">
+<h1>Including Plots</h1>
+<p>You can also embed plots. See Figure <a href="#fig:pie">1</a> for example:</p>
+<pre class="r"><code>par(mar = c(0, 1, 0, 1))
+pie(
+  c(280, 60, 20),
+  c(&#39;Sky&#39;, &#39;Sunny side of pyramid&#39;, &#39;Shady side of pyramid&#39;),
+  col = c(&#39;#0292D8&#39;, &#39;#F7EA39&#39;, &#39;#C4B632&#39;),
+  init.angle = -50, border = NA
+)</code></pre>
+<div class="figure"><span id="fig:pie"></span>
+<img src="/post/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png" alt="A fancy pie chart." width="672" />
+<p class="caption">
+Figure 1: A fancy pie chart.
+</p>
+</div>
+</div>
+
+            </div>
+        </div>
+    </div>
+    <div class="column is-3">
+        <div class="card">
+    <div class="card-content">
+        <h1 class="title is-5">Tags</h1>
+        <div class="tags">
+        
+            <span class="tag"><a href="/tags/development">development</a></span>
+        
+            <span class="tag"><a href="/tags/go">go</a></span>
+        
+            <span class="tag"><a href="/tags/golang">golang</a></span>
+        
+            <span class="tag"><a href="/tags/hugo">hugo</a></span>
+        
+            <span class="tag"><a href="/tags/plot">plot</a></span>
+        
+            <span class="tag"><a href="/tags/r-markdown">r-markdown</a></span>
+        
+            <span class="tag"><a href="/tags/regression">regression</a></span>
+        
+            <span class="tag"><a href="/tags/templates">templates</a></span>
+        
+            <span class="tag"><a href="/tags/themes">themes</a></span>
+        
+        </div>          
+    </div>
+</div><br>
+        <div class="card">
+    <div class="card-content">
+        <h1 class="title is-5">Recent posts</h1>
+        
+            <h1><a href="/post/teste/">teste</a></h1>
+            <time class="has-text-grey-light is-size-7">28 January 2020</time>
+        
+            <h1><a href="/post/2015-07-23-r-rmarkdown/">Hello R Markdown</a></h1>
+            <time class="has-text-grey-light is-size-7">23 July 2015</time>
+        
+            <h1><a href="/post/creating-a-new-theme/">Creating a New Theme</a></h1>
+            <time class="has-text-grey-light is-size-7">28 September 2014</time>
+        
+            <h1><a href="/post/hugoisforlovers/">Getting Started with Hugo</a></h1>
+            <time class="has-text-grey-light is-size-7">2 April 2014</time>
+        
+            <h1><a href="/post/goisforlovers/">(Hu)go Template Primer</a></h1>
+            <time class="has-text-grey-light is-size-7">2 April 2014</time>
+        
+    </div>
+</div>
+    <br>
+                
+
+
+    
+<br>
+        <div class="card">
+    <div class="card-content">
+        <h1 class="title is-5">Archives</h1>
+        
+            <a href="/archives/2020">2020</a> (1)<br>
+        
+            <a href="/archives/2015">2015</a> (1)<br>
+        
+            <a href="/archives/2014">2014</a> (4)<br>
+        
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+    </div>
+</div>
+
+<footer class="footer has-background-grey-darker has-text-white">
+    <div class="content has-text-centered">
+        <p>
+            <span class="icon is-large"><a href="https://twitter.com/" class="mysocial" rel="me"><i class="fab fa-twitter fa-3x"></i></a></span>&nbsp;&nbsp;
+            <span class="icon is-large"><a href="https://www.youtube.com/" class="mysocial" rel="me"><i class="fab fa-youtube fa-3x"></i></a></span>&nbsp;&nbsp;
+            <span class="icon is-large"><a href="https://github.com/" class="mysocial" rel="me"><i class="fab fa-github fa-3x"></i></a></span>&nbsp;&nbsp;
+            <br><br>
+            Copyright &copy; Hugo Theme 2020 - Theme by <a href="https://jeffprod.com" class="mysocial">JeffProd.com</a>
+            - <a class="mysocial" href="/about">About</a>
+        </p>
+    </div>
+</footer>
+
+<script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+</body>
+</html>

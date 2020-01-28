@@ -1,38 +1,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Aqui deve ser alterado para o nome do Blog</title>
-    <link>/tags/</link>
+    <link>/BlogWilliam/tags/</link>
     <description>Recent content in Tags on Aqui deve ser alterado para o nome do Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>Copyright © 2008–2018, @JeffProd</copyright>
+    <copyright>Copyright © 2018–2020, @william-barbosa</copyright>
+    <lastBuildDate>Wed, 03 Jul 2019 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/BlogWilliam/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>stata</title>
+      <link>/BlogWilliam/tags/stata/</link>
+      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/BlogWilliam/tags/stata/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>dplyr</title>
-      <link>/tags/dplyr/</link>
+      <link>/BlogWilliam/tags/dplyr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/tags/dplyr/</guid>
+      <guid>/BlogWilliam/tags/dplyr/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
-      <link>/tags/r/</link>
+      <link>/BlogWilliam/tags/r/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/tags/r/</guid>
+      <guid>/BlogWilliam/tags/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>teste</title>
-      <link>/tags/teste/</link>
+      <link>/BlogWilliam/tags/teste/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/tags/teste/</guid>
+      <guid>/BlogWilliam/tags/teste/</guid>
       <description></description>
     </item>
     

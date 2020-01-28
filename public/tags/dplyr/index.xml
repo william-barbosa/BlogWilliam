@@ -1,20 +1,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>dplyr on Aqui deve ser alterado para o nome do Blog</title>
-    <link>/tags/dplyr/</link>
+    <link>/BlogWilliam/tags/dplyr/</link>
     <description>Recent content in dplyr on Aqui deve ser alterado para o nome do Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>Copyright © 2008–2018, @JeffProd</copyright>
+    <copyright>Copyright © 2018–2020, @william-barbosa</copyright>
     
-        <atom:link href="/tags/dplyr/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/BlogWilliam/tags/dplyr/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Página de Teste dentro do Blog</title>
-      <link>/page_diversos/</link>
+      <link>/BlogWilliam/page_diversos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/page_diversos/</guid>
+      <guid>/BlogWilliam/page_diversos/</guid>
       <description>.badCode {background-color: red;}.bordepre{border: solid;border-style:solid;border-width: thin;border-color: #A8A8A8;font-size: 15px;padding: 2mm;color: black;font-weight: normal;background-color:#F5F5F5;width: 750px;}.bordered1 {border: solid;border-style:solid;border-width: thin;border-color: #A8A8A8;color: black;background-color:#F5F5F5;padding: 2mm;font-size: 14px;width: 750px;}Nova PáginaEsse é apenas um exemplo de como criar uma página dentro do blog. Ele é um arquivo simples de “.Rmd” que deve ser salvo na pasta “content”.</description>
     </item>
     
