@@ -5,7 +5,7 @@
     <div class="column is-9">
         <div class="tile is-child box">
             <div class="content">
-                <h3>Welcome to my blog !</h3>
+                <h3 class="whiteTextOverride">Seja bem vindo ao meu blog !</h3>
                 <hr>
                 {{ range $paginator.Pages }}
                     <article class="media">
@@ -13,11 +13,11 @@
                             <div class="content">
                                 <p class="title is-4"><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></p>
                                 <p class="subtitle is-size-6 has-text-grey-light">
-                                    Published at {{ .Date.Format "January 2, 2006" }} &middot;
-                                    <i class="far fa-clock"></i>&nbsp;{{.ReadingTime}} min read
+                                    Publicado em {{ .Date.Format "January 2, 2006" }}
+                                    
                                 </p>
-                                <p>{{ .Summary }}...</p>
-                            </div>
+                                <p class="hiteTextOverride">{{ .Summary }}...</p>
+				</div>
                         </div>
                     </article>
                 {{ end }}

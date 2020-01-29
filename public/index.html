@@ -35,19 +35,37 @@
 
 
 
-body {
-  font-family: "Times New Roman" Arial, Helvetica, sans-serif;
-  color: black;
+.body {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   background: blanchedalmond!important;
+  color: blue!important;
 }
 
+ 
+.text-primary{
+    color: rgb(0, 0, 0)!important;
+    font-family: "Helvetica Neue"!important;
+}
+
+.whiteTextOverride
+{
+ color: rgb(10, 10, 10) !important;
+ font-family: "Helvetica Neue"!important;
+}
+
+.content .media .media-content .title{
+    color: rgb(0, 0, 0);
+    font-family: "Helvetica Neue"!important;
+}
+
+ 
 .navbar{  
     background-color: rgb(0, 0, 0)!important;
 }
 
 .navbar .navbar-brand{   
     color: white!important;
-    font-family: "Times New Roman";
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     padding-top: 9.5px;
 }
 
@@ -59,7 +77,7 @@ body {
 
 .navbar .navbar-nav li a{
     color: white!important;  
-    font-family: "Times New Roman";
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 .navbar .navbar-nav li a:hover{  
     color:red!important;
@@ -77,12 +95,13 @@ body {
 
 .navbar .navbar-nav li a{
     color: white!important;  
-    font-family: "Times New Roman";
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 .navbar-toggler{
     background-color: #FFF!important;  
 }
 
+ 
 
 .hero-body {
     background-position: center;
@@ -90,16 +109,41 @@ body {
     background-repeat: no-repeat;
     
     }
-
+ 
 .hero.is-info {
     background-color: white;
-    color: #fff;
 }
     
+.hero.is-info .text{
+    color: white;
+    font-family:   'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
  
 
- 
+.hero.is-info .title{
+    color: black;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    
+}
 
+ 
+.card .card-title {  
+    
+    font-size: 2.2rem;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.card .card-link{
+    color: white!important;
+    font-size: 1.9rem;
+}
+
+ 
+.pagination-link.is-current{
+    background-color: #4a4a4a!important;
+    color: white!important;
+    border-color: #4a4a4a!important;
+}
 
 
 </style>
@@ -181,7 +225,7 @@ body {
             <div class="hero-body" style="background-image: url(/img/bg-blog.jpg);">
                 <div class="container has-text-centered">
                     <br>
-                    <h1 class="title is-size-1">
+                    <h1 class="text is-size-1">
                         
                             Código Livre Economy
                         
@@ -204,7 +248,7 @@ body {
     <div class="column is-9">
         <div class="tile is-child box">
             <div class="content">
-                <h3>Welcome to my blog !</h3>
+                <h3 class="whiteTextOverride">Seja bem vindo ao meu blog !</h3>
                 <hr>
                 
                     <article class="media">
@@ -212,12 +256,12 @@ body {
                             <div class="content">
                                 <p class="title is-4"><a href="/post/teste/">Teste</a></p>
                                 <p class="subtitle is-size-6 has-text-grey-light">
-                                    Published at January 21, 2020 &middot;
-                                    <i class="far fa-clock"></i>&nbsp;1 min read
+                                    Publicado em January 21, 2020
+                                    
                                 </p>
-                                <p>R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
+                                <p class="hiteTextOverride">R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
 When you click the Knit button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:...</p>
-                            </div>
+				</div>
                         </div>
                     </article>
                 
@@ -226,11 +270,11 @@ When you click the Knit button a document will be generated that includes both c
                             <div class="content">
                                 <p class="title is-4"><a href="/post/teste-2/">Teste 2</a></p>
                                 <p class="subtitle is-size-6 has-text-grey-light">
-                                    Published at July 3, 2019 &middot;
-                                    <i class="far fa-clock"></i>&nbsp;1 min read
+                                    Publicado em July 3, 2019
+                                    
                                 </p>
-                                <p>texto de teste...</p>
-                            </div>
+                                <p class="hiteTextOverride">texto de teste...</p>
+				</div>
                         </div>
                     </article>
                 
@@ -238,38 +282,40 @@ When you click the Knit button a document will be generated that includes both c
         </div>
     </div>
     <div class="column is-3">
-        <div class="card">
-    <div class="card-content">
-        <h1 class="title is-5">Tags</h1>
+        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+    <div class="card-body">
+        <h1 class="card-title is-5">Tags</h1>
         <div class="tags">
         
-            <span class="tag"><a href="/tags/dplyr">dplyr</a></span>
+            <span class="tag "><a href="/tags/dplyr">dplyr</a></span>
         
-            <span class="tag"><a href="/tags/r">r</a></span>
+            <span class="tag "><a href="/tags/r">r</a></span>
         
-            <span class="tag"><a href="/tags/stata">stata</a></span>
+            <span class="tag "><a href="/tags/stata">stata</a></span>
         
-            <span class="tag"><a href="/tags/teste">teste</a></span>
+            <span class="tag "><a href="/tags/teste">teste</a></span>
         
         </div>          
     </div>
-</div><br>
-        <div class="card">
-    <div class="card-content">
-        <h1 class="title is-5">Postagens Recentes</h1>
+</div>
+
+<br>
+        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+    <div class="card-body">
+        <h1 class="card-title is-5">Posts Recentes</h1>
         
-            <h1><a href="/post/teste/">Teste</a></h1>
+            <h1 class="card-link"><a href="/post/teste/">Teste</a></h1>
             <time class="has-text-grey-light is-size-7">21 January 2020</time>
         
-            <h1><a href="/post/teste-2/">Teste 2</a></h1>
+            <h1 class="card-link"><a href="/post/teste-2/">Teste 2</a></h1>
             <time class="has-text-grey-light is-size-7">3 July 2019</time>
         
     </div>
 </div>
     <br>
-        <div class="card">
-    <div class="card-content">
-        <h1 class="title is-5">Archives</h1>
+        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+    <div class="card-body">
+        <h1 class="ard-title is-5">Arquivos</h1>
         
             <a href="/archives/2020">2020</a> (1)<br>
         
