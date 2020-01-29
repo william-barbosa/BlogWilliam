@@ -1,4 +1,4 @@
-baseurl = "https://inspiring-kepler-cdd813.netlify.com/"
+baseurl = "https://codigo-livre-economy.netlify.com/"
 title = "Código Livre Economy"
 author = "William Barbosa"
 copyright = "Copyright © 2018–2020, @william-barbosa"
@@ -17,11 +17,11 @@ theme = "will-theme-blog"
 sectionPagesMenu = "main"
 
 [menu]
-   [[menu.main]]
-    identifier = "home"
-    name = "Home"
-    url = "/"
-    weight = 10
+  # [[menu.main]]
+  # identifier = "home"
+  #  name = "Home"
+  # url = "/"
+  #  weight = 10
 
   [[menu.main]]
     identifier = "Page_Diversos"
@@ -30,10 +30,10 @@ sectionPagesMenu = "main"
     weight = 20
     
     
-  [[menu.main]]
-    identifier = "lattes"
-    name = "Lattes"
-    url = "http://lattes.cnpq.br/9370334825334170"
+#  [[menu.main]]
+#    identifier = "lattes"
+#    name = "Lattes"
+#    url = "http://lattes.cnpq.br/9370334825334170"
     
     [[menu.main]]
     identifier = "recomendacao"
