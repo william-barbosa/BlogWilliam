@@ -23,11 +23,11 @@ sectionPagesMenu = "main"
   url = "/Perfil"
   weight = 10
 
-  [[menu.main]]
-    identifier = "Page_Diversos"
-    name = "Diversos"
-    url = "/Page_Diversos"
-    weight = 20
+#  [[menu.main]]
+#    identifier = "Page_Diversos"
+#    name = "Diversos"
+#    url = "/Page_Diversos"
+#    weight = 20
     
     
 #  [[menu.main]]
@@ -37,7 +37,7 @@ sectionPagesMenu = "main"
     
     [[menu.main]]
     identifier = "recomendacao"
-    name = "Recomendações"
+    name = "Leituras Indicadas"
     url = "/Recomendacao"
     
     
