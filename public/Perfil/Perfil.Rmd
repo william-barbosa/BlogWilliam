@@ -1,0 +1,196 @@
+---
+title: "Sobre"
+author: "William Barbosa"
+date: "29/01/2020"
+output: html_document
+---
+<img src="perfil.jpg" alt="" width="200" height="200" id="img"/>
+
+```{css,echo=FALSE}
+#hp  {
+float: right;    
+ margin: 0 0 0 0;
+}
+#img {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right:0;
+    top:0;
+}
+```
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**William Barbosa**          
+
+Curriculum Vitae                
+
+**Dados pessoais**
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+**Sexo:               ** Masculino   
+
+**Nacionalidade:** Brasileiro             
+
+**Nascimento:**         15/04/1989
+
+**Naturalidade:        ** Ponta Grossa - PR
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+**Endereço profissional**
+
+Universidade de São Paulo, Escola Superior de Agricultura Luiz de Queiroz, Departamento de Economia Administração e Sociologia. Av. Pádua Dias, 11, Agronomia, CEP: 13418900 - Piracicaba, SP - Brasil
+
+**Telefone:** (19) 34294444
+
+Fax: (19) 34345186
+
+E-mail: williambarbosa@usp.br / william.economist@gmail.com
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+**Formação Acadêmica/Titulação**
+
+**2017 - Atual      **         Doutorado em Ciências (Economia Aplicada).
+
+Universidade de São Paulo, USP, São Paulo, Brasil
+
+Título: **CENÁRIOS DE MUDANÇAS CLIMÁTICAS NA AGRICULTURA E MIGRAÇÕES INTERNAS NO BRASIL: UMA APLICAÇÃO DO MODELO DE EQUILÍBRIO GERAL COMPUTÁVEL**
+
+Orientador: Joaquim Bento de Souza Ferreira Filho
+
+Bolsista do(a): Coordenação de Aperfeiçoamento de Pessoal de Nível Superior
+
+**2015 - 2017**         Mestrado Em Economia e Desenvolvimento.
+
+Universidade Federal de Santa Maria, UFSM, Santa Maria, Brasil
+
+Título: **MIGRAÇÕES NO BRASIL: UMA APLICAÇÃO DO MODELO GRAVITACIONAL COM DADOS EM PAINEL (2002-2015)**, Ano de obtenção: 2017
+
+Orientador: Clailton Ataídes de Freitas
+
+Bolsista do(a): Coordenação de Aperfeiçoamento de Pessoal de Nível Superior
+
+**2019        **         Especialização em MBA em Agronegócios.
+
+Instituto de Pesquisas e Educação Continuada Economia e Gestão de Empresas, I-PECEGE, Piracicaba, Brasil
+
+**2011 - 2014**         Graduação  em Ciências Econômicas.
+
+Universidade Estadual de Ponta Grossa, UEPG, Ponta Grossa, Brasil
+
+Título: **Análise Empírica da Evidência da Desindustrialização no Estado do Paraná no Período de 1996 a 2012**
+
+Orientador: Alex Sander Souza do Carmo
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+**Área de conhecimento**
+
+- Programação avançada para análise de dados em R, Stata e iniciante em Python;
+
+- Especialidade em análise, manipulação, limpeza de dados e base de dados com R;
+
+- Manipulação e tratamento de séries temporais com R; dados espaciais com R, QGIS e Geoda;
+
+- Banco de dados; MySQL; RSQL; SQLDF;
+
+- Métodos quantitativos;
+
+- Modelagem com econometria de séries temporais;
+
+- Modelagem com econometria de dados espaciais;
+
+- Modelagem com dados do tipo _cross-section_ e em painel;
+
+- Modelagem com _Probit_, _Tobit_ e _Logit_;
+
+- Geração de relatórios automatizados com LaTeX, Markdown e R-Sweave;
+
+- Pacote Office, especialmente Excel Avançado, Word e PowerPoint;
+
+- Manipulações e extração de informações de microdados da PNAD, CENSO, RAIS, etc.;
+
+- Estudos de viabilidade econômica.
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+**Objetivo Profissional**
+
+-Atuar na área de análise de dados e manutenção de banco de dados;
+
+-Atuar na área de modelagem de previsão de risco e retorno;
+
+-Desenvolvimento de modelos estatísticos e econométricos para análises econômicas;
+
+-Elaboração de relatórios sobre resultados de estudos;
+
+-Análise e modelos de previsão;
+
+-Elaboração de estudos quantitativos sobre aspectos econômicos, sociais e migrações internas/internacionais;
+
+-Pesquisa relacionada ao uso da terra, agricultura, mudanças climáticas e migrações;
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+**Vínculo institucional**
+
+**2019 - Atual  **         Vínculo: Colaborador. Enquadramento funcional: Professor orientador na área de gestão de negócios e projetos. Regime: Integral
+
+**2019 - Atual  **         Vínculo: Consultor externo. Enquadramento funcional: Consultor/Parecerista de estudos de viabilidade econômica e fluxos de caixa na área de gestão de negócios. Regime: Integral
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+**Revisor de periódico:**
+
+**1.        ECONOMIA &amp; REGIÃO**
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+**Vínculo**
+
+**2017 - Atual  **
+
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+
+**Artigos completos publicados em periódicos**
+
+1. OLIVEIRA, E. A.; FEISTEL, P. R.; **BARBOSA, W.** O Pecado Original Doméstico: Uma Análise Da Experiência Brasileira Entre 2001 A 2016. ESTUDO &amp; DEBATE (ONLINE)., v.26, p.7 - 33, 2019.
+
+2. OLIVEIRA, E. A.; **BARBOSA, W.** ; CATEIA, J. V.; FEISTEL, P. R. AS EXPORTAÇÕES BRASILEIRAS POR GRAU DE ELABORAÇÃO ENTRE 1980 E 2015: APLICAÇÃO DO MODELO EATON-KORTUM À LUZ DA TEORIA CEPALINA. Análise Econômica (UFRGS) on-line. , v.36, p.179 - 201, 2018.
+
+3. SILVA, J. V. S.; **BARBOSA, W.** ; FREITAS, C. A. Complementaridade Comercial entre Brasil e América do Sul: Aplicação do modelo gravitacional em dados em painel para o mercado de bens de alta intensidade tecnológica. RBEE. REVISTA BRASILEIRA DE ECONOMIA DE EMPRESAS. , v.18, p.43 - 63, 2018.
+
+4. SILVA, J. V. S.; **BARBOSA, W.** A América do Sul no Dinamismo Comercial Brasileiro: Um Estudo Das Complementaridades Por Intensidade Tecnológica. OBSERVATORIO DE LA ECONOMÍA LATINOAMERICANA. , v.3, p.1-17 - , 2017.
+
+5. **BARBOSA, W.** ; OLIVEIRA, E. A.; FREITAS, C. A.; SILVA, J. V. S. UMA ANÁLISE DA CURVA DE KUZNETS PARA OS MUNICÍPIOS BRASILEIROS (1991, 2000, 2010). ECONOMIA &amp; REGIÃO. , v.5, p.65 - 83, 2017.
+
+6. OLIVEIRA, E. A.; **BARBOSA, W.** ; ROHENKOHL, J. E.
+
+CRISE SUBPRIME: UMA EXPLICAÇÃO COM BASE NO CONCEITO DE DIREITOS DE PROPRIEDADE. Revista da FAE. , v.19, p.52 - 74, 2016.
+
+7. **BARBOSA, W.** ; OLIVEIRA, E. A.; FREITAS, C. A.; FEISTEL, P. R. MIGRAÇÕES INTERESTADUAIS: UMA APLICAÇÃO DO MODELO GRAVITACIONAL PARA OS ESTADOS BRASILEIROS. Revista Brasileira de Estudos Regionais e Urbanos. , v.10, p.156 - 176, 2016.
+
+8. OLIVEIRA, E. A.; **BARBOSA, W.** ; FREITAS, C. A. Ordem e caos: um conceito alternativo de mercado. Estudos do CEPE. , p.04 - , 2016.
+
+9. **BARBOSA, W.** ; PELINSKI, A. R.; CARMO, A. S. S. Existe desindustrialização no Estado do Paraná? um teste empírico para o período de 1996 a 2012. INFORME GEPEC (ONLINE). , v.19, p.55 - 79, 2015.
+
+
+
+**Trabalhos publicados em anais de eventos (completo)**
+
+1. **BARBOSA, W.** ; FREITAS, C. A.; OLIVEIRA, E. A.
+
+DESIGUALDADE DE RENDA, CAPITAL HUMANO E POPULAÇÃO RURAL-URBANA: UMA ANÁLISE DA CURVA DE KUZNETS PARA O MUNICÍPIOS BRASILEIROS (1991, 2000 E 2010) In: 54º Congresso da Sociedade Brasileira de Economia, Administração e Sociologia Rural, 2016, Maceió - AL.
+
+  **Desenvolvimento, território e biodiversidade**. , 2016.
+
+2. OLIVEIRA, E. A.; **BARBOSA, W.** ; FREITAS, C. A.; CASAGRANDE, D.
+
+Estagnação da produtividade do fator trabalho no Brasil entre 1950 a 2008: uma decomposição dos fatores de curto e longo prazo. In: XXI Encontro Regional de Economia/XXII Fórum Banco do Nordeste de Desenvolvimento, 2016, Fortaleza.   **XXII Fórum Banco do Nordeste de Desenvolvimento**. , 2016.

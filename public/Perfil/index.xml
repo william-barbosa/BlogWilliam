@@ -1,0 +1,32 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Perfils on Código Livre Economy</title>
+    <link>/perfil/</link>
+    <description>Recent content in Perfils on Código Livre Economy</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2018–2020, @william-barbosa</copyright>
+    
+        <atom:link href="/perfil/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sobre</title>
+      <link>/perfil/perfil/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/perfil/perfil/</guid>
+      <description>#hp {float: right; margin: 0 0 0 0;}#img {width: 200px;height: 200px;position: absolute;right:0;top:0;}William Barbosa
+Curriculum Vitae
+Dados pessoais
+_________________________________________________________________________________________________________________
+Sexo:  Masculino
+Nacionalidade: Brasileiro
+Nascimento: 15/04/1989
+Naturalidade:  Ponta Grossa - PR
+_________________________________________________________________________________________________________________
+Endereço profissional
+Universidade de São Paulo, Escola Superior de Agricultura Luiz de Queiroz, Departamento de Economia Administração e Sociologia. Av. Pádua Dias, 11, Agronomia, CEP: 13418900 - Piracicaba, SP - Brasil</description>
+    </item>
+    
+  </channel>
+</rss>

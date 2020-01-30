@@ -147,6 +147,7 @@
 }
 
 
+
 </style>
 
 </head>
@@ -166,12 +167,13 @@
        
            <div class="collapse navbar-collapse" id="navbarSite">
             <ul class="navbar-nav mr-auto"> 
+                <!--
                 <li class="nav-item active"> 
                     <a class="nav-link" href="http://lattes.cnpq.br/9370334825334170">Lattes</a>
-                </li>
+                </li>-->
                     
                 <!-- Aqui começa a gambiarra que inclui a outra parte do menu-->
-                <div class="navbar-collapse collapse navbar-expand-lg" id="navigation">
+                <div class="navbar-collapse collapse navbar-expand-lg" id="navbarSite">
                     <ul class="navbar-nav mr-auto">
                         {{ range .Site.Menus.main }}
                     <li class="nav-item active">
@@ -209,7 +211,10 @@
         <!-- hero -->
         <section class="hero is-info is-medium">
             <div class="hero-body" style="background-image: url({{ "img/bg-blog.jpg" | absURL }});">
-                <div class="container has-text-centered">
+ 
+<!--                <h2 class="text is-size-4">Autor: William Barbosa</h2> -->
+                  <div class="container has-text-centered">
+                   </h1>
                     <br>
                     <h1 class="text is-size-1">
                         {{ if eq .Type "tags" }}

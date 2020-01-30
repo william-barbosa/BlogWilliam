@@ -17,11 +17,11 @@ theme = "will-theme-blog"
 sectionPagesMenu = "main"
 
 [menu]
-  # [[menu.main]]
-  # identifier = "home"
-  #  name = "Home"
-  # url = "/"
-  #  weight = 10
+   [[menu.main]]
+  identifier = "Sobre"
+  name = "Sobre"
+  url = "/Perfil"
+  weight = 10
 
   [[menu.main]]
     identifier = "Page_Diversos"
