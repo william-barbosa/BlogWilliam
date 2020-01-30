@@ -5,7 +5,10 @@
     <div class="column is-9">
         <div class="tile is-child box">
             <div class="content">
-                <h3 class="whiteTextOverride">Seja bem vindo ao meu blog !</h3>
+                <h3 class="whiteTextOverride">Olá, meu nome é William Barbosa. Seja bem vindo ao meu blog !</h3>
+                <p class="whiteTextOverride">
+                    Este blog é destinado aos estudantes e profissionais que estão interessados em aprender sobre programação para análise de dados, softwares livres e tecnologias.
+                </p>
                 <hr>
                 {{ range $paginator.Pages }}
                     <article class="media">
@@ -16,7 +19,7 @@
                                     Publicado em {{ .Date.Format "January 2, 2006" }}
                                     
                                 </p>
-                                <p class="hiteTextOverride">{{ .Summary }}...</p>
+                                <p class="whiteTextOverride">{{ .Summary }}...</p>
 				</div>
                         </div>
                     </article>
