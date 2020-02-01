@@ -29,11 +29,32 @@ knitr::opts_chunk$set(echo = TRUE)
   float: right;
   width: 33%;
   text-align: right;
+   margin-top: 25px;
+}
+
+.comment{
+background-color: #DBDBDB;
+padding: 10px;
+border: 1px solid black;
+margin-left: 20px;
+border-radius: 5px;
+font-style: italic;
+}
+
+.linha-divisoria {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
 </style>
 
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+<div class="linha-divisoria">
+</div>
+
+
 
 <div class="column-left">
 
@@ -54,7 +75,9 @@ knitr::opts_chunk$set(echo = TRUE)
 knitr::include_graphics("perfil.jpg")
 ```
 </div> 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+
+
 
 **Endereço profissional**
 
@@ -66,7 +89,9 @@ Fax: (19) 34345186
 
 E-mail: williambarbosa@usp.br / william.economist@gmail.com
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+<div class="linha-divisoria">
+</div>
+
 
 **Formação Acadêmica/Titulação**
 
@@ -102,7 +127,8 @@ Título: **Análise Empírica da Evidência da Desindustrialização no Estado d
 
 Orientador: Alex Sander Souza do Carmo
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+<div class="linha-divisoria">
+</div>
 
 **Área de conhecimento**
 
@@ -132,7 +158,8 @@ Orientador: Alex Sander Souza do Carmo
 
 - Estudos de viabilidade econômica.
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+<div class="linha-divisoria">
+</div>
 
 **Interesses acadêmicos**
 
@@ -156,7 +183,8 @@ Orientador: Alex Sander Souza do Carmo
 
 - Complexidade Econômica.
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+<div class="linha-divisoria">
+</div>
 
 **Vínculo institucional**
 
@@ -164,7 +192,8 @@ Orientador: Alex Sander Souza do Carmo
 
 **2019 - Atual  **         Vínculo: Consultor externo. Enquadramento funcional: Consultor/Parecerista de estudos de viabilidade econômica e fluxos de caixa na área de gestão de negócios. Regime: Integral
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+<div class="linha-divisoria">
+</div>
 
 **Revisor de periódico:**
 
@@ -172,8 +201,8 @@ Orientador: Alex Sander Souza do Carmo
 
 **2017 - Atual  **
 
-\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
-
+<div class="linha-divisoria">
+</div>
 
 **Artigos completos publicados em periódicos**
 
@@ -205,6 +234,8 @@ Orientador: Alex Sander Souza do Carmo
 
 
 
+<div class="linha-divisoria">
+</div>
 
 
 

@@ -70,7 +70,7 @@
 .navbar .navbar-brand{   
     color: white!important;
     font-size: large;
-    font-family:'Lucida Grande', 'Lucida Sans Unicode';
+    font-family:sans-serif!important;
     padding-top: 12.5px;
 }
 
@@ -83,7 +83,7 @@
 .navbar .navbar-nav li a{
     color: white!important;  
     font-size: large;
-    font-family: 'Lucida Grande', 'Lucida Sans Unicode';
+    font-family: sans-serif!important;
 }
 .navbar .navbar-nav li a:hover{  
     color:red!important;
@@ -134,13 +134,17 @@
 
  
 .card .card-title {  
-    
+    color: black;
     font-size: 2.2rem;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
+.card{
+    background-color: white!important;
+    border-color: rgb(165, 165, 165)!important;
+}
 .card .card-link{
-    color: white!important;
+    color: rgb(117, 117, 117)!important;
     font-size: 1.9rem;
 }
 
@@ -255,26 +259,12 @@
                     <article class="media">
                         <div class="media-content">
                             <div class="content">
-                                <p class="title is-4"><a href="/post/teste/">Teste</a></p>
+                                <p class="title is-4"><a href="/post/instalando-o-r-e-rstudio/">Instalando o R e Rstudio</a></p>
                                 <p class="subtitle is-size-6 has-text-grey-light">
-                                    Publicado em January 21, 2020
+                                    Publicado em January 31, 2020
                                     
                                 </p>
-                                <p class="whiteTextOverride">R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-When you click the Knit button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:...</p>
-				</div>
-                        </div>
-                    </article>
-                
-                    <article class="media">
-                        <div class="media-content">
-                            <div class="content">
-                                <p class="title is-4"><a href="/post/teste-2/">Teste 2</a></p>
-                                <p class="subtitle is-size-6 has-text-grey-light">
-                                    Publicado em July 3, 2019
-                                    
-                                </p>
-                                <p class="whiteTextOverride">texto de teste...</p>
+                                <p class="whiteTextOverride">IntroduçãoEste é um dos primeiros posts introdutórios sobre a utilização do R para análise de dados e modelagem econométrica que serão publicados neste blog. R é uma linguagem de programação muito utilizada, tanto fora, quanto dentro do Brasil e que vem se intensificando ao longo dos últimos anos entre os pesquisadores de diversas áreas na esfera acadêmica. Destaca-se que essa linguagem não se limita somente aos pesquisadores, mas também é notável a sua utilização por profissionais....</p>
 				</div>
                         </div>
                     </article>
@@ -288,11 +278,9 @@ When you click the Knit button a document will be generated that includes both c
         <h1 class="card-title is-5">Tags</h1>
         <div class="tags">
         
-            <span class="tag "><a href="/tags/dplyr">dplyr</a></span>
-        
             <span class="tag "><a href="/tags/r">r</a></span>
         
-            <span class="tag "><a href="/tags/stata">stata</a></span>
+            <span class="tag "><a href="/tags/rstudio">rstudio</a></span>
         
             <span class="tag "><a href="/tags/teste">teste</a></span>
         
@@ -301,26 +289,21 @@ When you click the Knit button a document will be generated that includes both c
 </div>
 
 <br>
-        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+        <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
     <div class="card-body">
         <h1 class="card-title is-5">Posts Recentes</h1>
         
-            <h1 class="card-link"><a href="/post/teste/">Teste</a></h1>
-            <time class="has-text-grey-light is-size-7">21 January 2020</time>
-        
-            <h1 class="card-link"><a href="/post/teste-2/">Teste 2</a></h1>
-            <time class="has-text-grey-light is-size-7">3 July 2019</time>
+            <h1 class="card-link"><a href="/post/instalando-o-r-e-rstudio/">Instalando o R e Rstudio</a></h1>
+            <time class="has-text-grey-light is-size-7">31 January 2020</time>
         
     </div>
 </div>
     <br>
-        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+        <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
     <div class="card-body">
-        <h1 class="ard-title is-5">Arquivos</h1>
+        <h1 class="card-title is-5">Arquivos</h1>
         
-            <a href="/archives/2020">2020</a> (1)<br>
-        
-            <a href="/archives/2019">2019</a> (1)<br>
+            <a class="card-link" href="/archives/2020">2020</a> (1)<br>
         
     </div>
 </div>

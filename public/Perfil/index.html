@@ -66,7 +66,7 @@
 .navbar .navbar-brand{   
     color: white!important;
     font-size: large;
-    font-family:'Lucida Grande', 'Lucida Sans Unicode';
+    font-family:sans-serif!important;
     padding-top: 12.5px;
 }
 
@@ -79,7 +79,7 @@
 .navbar .navbar-nav li a{
     color: white!important;  
     font-size: large;
-    font-family: 'Lucida Grande', 'Lucida Sans Unicode';
+    font-family: sans-serif!important;
 }
 .navbar .navbar-nav li a:hover{  
     color:red!important;
@@ -130,13 +130,17 @@
 
  
 .card .card-title {  
-    
+    color: black;
     font-size: 2.2rem;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
+.card{
+    background-color: white!important;
+    border-color: rgb(165, 165, 165)!important;
+}
 .card .card-link{
-    color: white!important;
+    color: rgb(117, 117, 117)!important;
     font-size: 1.9rem;
 }
 
@@ -265,9 +269,28 @@
   float: right;
   width: 33%;
   text-align: right;
+   margin-top: 25px;
+}
+
+.comment{
+background-color: #DBDBDB;
+padding: 10px;
+border: 1px solid black;
+margin-left: 20px;
+border-radius: 5px;
+font-style: italic;
+}
+
+.linha-divisoria {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
 </style>
-<p>_________________________________________________________________________________________________________________</p>
+<div class="linha-divisoria">
+
+</div>
 <div class="column-left">
 <p><strong>Nome: William Barbosa</strong></p>
 <p><strong>Nacionalidade:</strong> Brasileiro</p>
@@ -278,13 +301,14 @@
 <div class="column-right">
 <p><img src="perfil.jpg" width="80%" /></p>
 </div>
-<p>_________________________________________________________________________________________________________________</p>
 <p><strong>Endereço profissional</strong></p>
 <p>Universidade de São Paulo, Escola Superior de Agricultura Luiz de Queiroz, Departamento de Economia Administração e Sociologia. Av. Pádua Dias, 11, Agronomia, CEP: 13418900 - Piracicaba, SP - Brasil</p>
 <p><strong>Telefone:</strong> (19) 34294444</p>
 <p>Fax: (19) 34345186</p>
 <p>E-mail: <a href="mailto:williambarbosa@usp.br" class="email">williambarbosa@usp.br</a> / <a href="mailto:william.economist@gmail.com" class="email">william.economist@gmail.com</a></p>
-<p>_________________________________________________________________________________________________________________</p>
+<div class="linha-divisoria">
+
+</div>
 <p><strong>Formação Acadêmica/Titulação</strong></p>
 <p><strong>2017 - Atual </strong> Doutorado em Ciências (Economia Aplicada).</p>
 <p>Universidade de São Paulo, USP, São Paulo, Brasil</p>
@@ -302,7 +326,9 @@
 <p>Universidade Estadual de Ponta Grossa, UEPG, Ponta Grossa, Brasil</p>
 <p>Título: <strong>Análise Empírica da Evidência da Desindustrialização no Estado do Paraná no Período de 1996 a 2012</strong></p>
 <p>Orientador: Alex Sander Souza do Carmo</p>
-<p>_________________________________________________________________________________________________________________</p>
+<div class="linha-divisoria">
+
+</div>
 <p><strong>Área de conhecimento</strong></p>
 <ul>
 <li><p>Programação avançada para análise de dados em R, Stata e iniciante em Python;</p></li>
@@ -319,7 +345,9 @@
 <li><p>Manipulações e extração de informações de microdados da PNAD, CENSO, RAIS, etc.;</p></li>
 <li><p>Estudos de viabilidade econômica.</p></li>
 </ul>
-<p>_________________________________________________________________________________________________________________</p>
+<div class="linha-divisoria">
+
+</div>
 <p><strong>Interesses acadêmicos</strong></p>
 <ul>
 <li><p>Modelo de equilíbrio geral computável;</p></li>
@@ -333,15 +361,21 @@
 <li><p>Estudos sobre a indústria brasileira e seu aspecto espacial, política industrial e <em>doença holandesa</em>;</p></li>
 <li><p>Complexidade Econômica.</p></li>
 </ul>
-<p>_________________________________________________________________________________________________________________</p>
+<div class="linha-divisoria">
+
+</div>
 <p><strong>Vínculo institucional</strong></p>
 <p><strong>2019 - Atual </strong> Vínculo: Colaborador. Enquadramento funcional: Professor orientador na área de gestão de negócios e projetos. Regime: Integral</p>
 <p><strong>2019 - Atual </strong> Vínculo: Consultor externo. Enquadramento funcional: Consultor/Parecerista de estudos de viabilidade econômica e fluxos de caixa na área de gestão de negócios. Regime: Integral</p>
-<p>_________________________________________________________________________________________________________________</p>
+<div class="linha-divisoria">
+
+</div>
 <p><strong>Revisor de periódico:</strong></p>
 <p><strong>1. ECONOMIA &amp; REGIÃO</strong></p>
 <p><strong>2017 - Atual </strong></p>
-<p>_________________________________________________________________________________________________________________</p>
+<div class="linha-divisoria">
+
+</div>
 <p><strong>Artigos completos publicados em periódicos</strong></p>
 <ol style="list-style-type: decimal">
 <li><p>OLIVEIRA, E. A.; FEISTEL, P. R.; <strong>BARBOSA, W.</strong> O Pecado Original Doméstico: Uma Análise Da Experiência Brasileira Entre 2001 A 2016. ESTUDO &amp; DEBATE (ONLINE)., v.26, p.7 - 33, 2019.</p></li>
@@ -359,6 +393,9 @@
 <li><p><strong>BARBOSA, W.</strong> ; FREITAS, C. A.; OLIVEIRA, E. A. DESIGUALDADE DE RENDA, CAPITAL HUMANO E POPULAÇÃO RURAL-URBANA: UMA ANÁLISE DA CURVA DE KUZNETS PARA O MUNICÍPIOS BRASILEIROS (1991, 2000 E 2010) In: 54º Congresso da Sociedade Brasileira de Economia, Administração e Sociologia Rural, 2016, Maceió - AL. <strong>Desenvolvimento, território e biodiversidade</strong>. , 2016.</p></li>
 <li><p>OLIVEIRA, E. A.; <strong>BARBOSA, W.</strong> ; FREITAS, C. A.; CASAGRANDE, D. Estagnação da produtividade do fator trabalho no Brasil entre 1950 a 2008: uma decomposição dos fatores de curto e longo prazo. In: XXI Encontro Regional de Economia/XXII Fórum Banco do Nordeste de Desenvolvimento, 2016, Fortaleza. <strong>XXII Fórum Banco do Nordeste de Desenvolvimento</strong>. , 2016.</p></li>
 </ol>
+<div class="linha-divisoria">
+
+</div>
 
             </div>
         </div>
@@ -369,11 +406,9 @@
         <h1 class="card-title is-5">Tags</h1>
         <div class="tags">
         
-            <span class="tag "><a href="/tags/dplyr">dplyr</a></span>
-        
             <span class="tag "><a href="/tags/r">r</a></span>
         
-            <span class="tag "><a href="/tags/stata">stata</a></span>
+            <span class="tag "><a href="/tags/rstudio">rstudio</a></span>
         
             <span class="tag "><a href="/tags/teste">teste</a></span>
         
@@ -382,15 +417,12 @@
 </div>
 
 <br>
-        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+        <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
     <div class="card-body">
         <h1 class="card-title is-5">Posts Recentes</h1>
         
-            <h1 class="card-link"><a href="/post/teste/">Teste</a></h1>
-            <time class="has-text-grey-light is-size-7">21 January 2020</time>
-        
-            <h1 class="card-link"><a href="/post/teste-2/">Teste 2</a></h1>
-            <time class="has-text-grey-light is-size-7">3 July 2019</time>
+            <h1 class="card-link"><a href="/post/instalando-o-r-e-rstudio/">Instalando o R e Rstudio</a></h1>
+            <time class="has-text-grey-light is-size-7">31 January 2020</time>
         
     </div>
 </div>
@@ -400,13 +432,11 @@
 
     
 <br>
-        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+        <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
     <div class="card-body">
-        <h1 class="ard-title is-5">Arquivos</h1>
+        <h1 class="card-title is-5">Arquivos</h1>
         
-            <a href="/archives/2020">2020</a> (1)<br>
-        
-            <a href="/archives/2019">2019</a> (1)<br>
+            <a class="card-link" href="/archives/2020">2020</a> (1)<br>
         
     </div>
 </div>

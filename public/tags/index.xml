@@ -5,35 +5,26 @@
     <description>Recent content in Tags on Código Livre Economy</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2018–2020, @william-barbosa</copyright>
-    <lastBuildDate>Wed, 03 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 31 Jan 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>stata</title>
-      <link>/tags/stata/</link>
-      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/stata/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>dplyr</title>
-      <link>/tags/dplyr/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/dplyr/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>R</title>
       <link>/tags/r/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 31 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rstudio</title>
+      <link>/tags/rstudio/</link>
+      <pubDate>Fri, 31 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/rstudio/</guid>
       <description></description>
     </item>
     

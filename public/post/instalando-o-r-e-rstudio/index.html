@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Código Livre Economy  | Instalando o R e Rstudio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script> 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+   
+      
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" />
+    <link rel="stylesheet" href="/css/blog.css" />
+    
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+ 
+ 
+
+
+
+
+<style>
+
+
+
+.body {
+  font-family: 'Lucida Grande',"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  background: blanchedalmond!important;
+  color: blue!important;
+}
+
+
+
+ 
+.text-primary{
+    color: rgb(0, 0, 0)!important;
+    font-family: sans-serif!important;
+}
+
+.whiteTextOverride
+{
+ color: black !important;
+ font-family: sans-serif!important;
+}
+
+
+
+.content .media .media-content .title{
+    color: black;
+    font-family: sans-serif!important;
+}
+
+ 
+.navbar{  
+    background-color: rgb(0, 0, 0)!important;
+}
+
+.navbar .navbar-brand{   
+    color: white!important;
+    font-size: large;
+    font-family:sans-serif!important;
+    padding-top: 12.5px;
+}
+
+
+.navbar .container .navbar-brand:hover{  
+    color: rgb(228, 15, 15)!important;
+}
+
+
+.navbar .navbar-nav li a{
+    color: white!important;  
+    font-size: large;
+    font-family: sans-serif!important;
+}
+.navbar .navbar-nav li a:hover{  
+    color:red!important;
+}
+.navbar .nav-item .dropdown-menu .dropdown-item{
+    color: rgb(2, 2, 2)!important;  
+    background-color: white!important;  
+}
+
+.navbar .nav-item .dropdown-menu .dropdown-item:hover{
+    color: rgb(2, 2, 2)!important;
+    background-color: red!important;
+}
+
+
+.navbar .navbar-nav li a{
+    color: white!important;  
+    font-family: 'Lucida Grande';
+}
+.navbar-toggler{
+    background-color: #FFF!important;  
+}
+
+ 
+
+.hero-body {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    }
+ 
+.hero.is-info {
+    background-color: white;
+}
+    
+.hero.is-info .text{
+    color: white;
+    font-family:   'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+ 
+
+.hero.is-info .title{
+    color: rgb(228, 15, 15);
+    font-family: "Lucinda Grande";
+    
+}
+
+ 
+.card .card-title {  
+    color: black;
+    font-size: 2.2rem;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.card{
+    background-color: white!important;
+    border-color: rgb(165, 165, 165)!important;
+}
+.card .card-link{
+    color: rgb(117, 117, 117)!important;
+    font-size: 1.9rem;
+}
+
+ 
+.pagination-link.is-current{
+    background-color: #4a4a4a!important;
+    color: white!important;
+    border-color: #4a4a4a!important;
+}
+
+
+
+</style>
+
+</head>
+
+
+<body>
+
+    
+    
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+        <a class="navbar-brand h1 mb-0 " href="/">Início</a> 
+        
+        <button class="navbar-toggler ml-auto navbar-light" type="button" data-toggle="collapse" data-target="#navbarSite" aria-controls="navbarToggleExternalContent" aria-expanded="false"> 
+            <span class="navbar-toggler-icon"></span> 
+        </button>
+       
+           <div class="collapse navbar-collapse" id="navbarSite">
+            <ul class="navbar-nav mr-auto"> 
+                
+                    
+                
+                <div class="navbar-collapse collapse navbar-expand-lg" id="navbarSite">
+                    <ul class="navbar-nav mr-auto">
+                        
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/perfil">Sobre</a>
+                    </li>
+                        
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/recomendacao">Leituras Indicadas</a>
+                    </li>
+                        
+                    </ul>
+                </div>
+
+            </ul>
+
+    
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">Software</a>
+                
+                    <ul class="dropdown-menu" >
+                        <a href="https://www.qgis.org/pt_BR/site/" class="dropdown-item active">QGIS</a>
+                        <a href="https://geodacenter.github.io/" class="dropdown-item">GeoDa</a>
+                        <a href="https://www.tug.org/texlive/" class="dropdown-item">LaTex - TeX Live</a>
+                        <a href="https://www.r-project.org/" class="dropdown-item">R</a>
+                        <a href="https://www.anaconda.com/" class="dropdown-item">Python - Anaconda</a>
+                    </ul>
+
+
+                </li>
+
+
+
+            </ul>
+                
+        </div>
+    </div>
+    </nav>
+
+        
+        <section class="hero is-info is-medium">
+            <div class="hero-body" style="background-image: url(/img/bg-blog.jpg);">
+ 
+
+                  <div class="container has-text-centered">
+                   </h1>
+                    <br>
+                    <h1 class="text is-size-1">
+                        
+                            Instalando o R e Rstudio
+                        
+                    </h1>
+                    
+                </div>
+            </div>
+
+
+
+
+
+
+<div class="container">
+    <div class="section">
+    
+
+<div class="columns">
+    <div class="column is-9">
+        <div class="tile is-child box">
+            <div class="content">
+                
+
+
+<h3 style="color:black; font-family:sans-serif;">
+Introdução
+</h3>
+<p style="color:black; font-family:sans-serif;margin-bottom: 5px;">
+Este é um dos primeiros posts introdutórios sobre a utilização do R para análise de dados e modelagem econométrica que serão publicados neste blog. R é uma linguagem de programação muito utilizada, tanto fora, quanto dentro do Brasil e que vem se intensificando ao longo dos últimos anos entre os pesquisadores de diversas áreas na esfera acadêmica. Destaca-se que essa linguagem não se limita somente aos pesquisadores, mas também é notável a sua utilização por profissionais.
+</p>
+<p style="color:black; font-family:sans-serif;margin-bottom: 5px;">
+Baseando-se na linguagem S, o <strong>R</strong> originalmente surgiu em meados de 1990. O R é uma linguagem poderosa na manipulação e análise de dados, contendo uma enorme variedade de técnicas estatísticas, tais como modelos lineares, não lineares, testes estatísticos, séries temporais, espaciais, classificação e agrupamento de dados. Uma das principais vantagens do R é que ele é disponibilizado como Software Livre e pode ser executado na maioria dos sistemas operacionais (inclusive em dispositivos móveis como o Android).
+</p>
+<p style="color:black; font-family:sans-serif;margin-bottom: 5px;">
+Uma segunda vantagem da utilização do R é que também existe uma grande variedade de pacotes que auxiliam nas mais diversas tarefas rotineiras, tais como a manipulação de dados, por exemplo com o <strong>dplyr</strong>; ou a visualização gráfica com o <strong>ggplot2</strong>. A terceira vantagem é que existem muitas listas de discussões que podem auxiliar no entendimento da linguagem e de funções de pacotes em específicos. A pergunta “será que é possível fazer com R?” deve ser substituída para “como fazer em R?”. Sim, o R é capaz de fazer inúmeras coisas, que vão desde salvar uma base de dados em um formato em particular, até páginas e aplicações web.
+</p>
+<h3 style="color:black; font-family:sans-serif;">
+Objetivo:
+</h3>
+<p style="color:black; font-family:sans-serif;margin-bottom: 30px;">
+Apresentar uma breve introdução à linguagem R e sua instalação. Para otimizar a utilização da linguagem, vamos instalar o Rstudio que é uma IDE que fornece recursos e <em>addins</em> muito úteis ao dia a dia. Para a instalação é recomendado que primeiro seja instalado o R e posteriormente o Rstudio.
+</p>
+<h3 style="color:black; font-family:sans-serif;">
+Instalação no Windows: Passo 1
+</h3>
+<p style="color:black; font-family:sans-serif;margin-bottom: 30px;">
+Primeiramente devemos entrar no site do repositório do R
+<a href="https://brieger.esalq.usp.br/CRAN/" style="color:blue">clicando aqui</a>. Note que é possível baixar para Linux, Mac e Windows. Para a instalação no Windows, após clicar no link destacado em amarelo, deve-se entrar no link <span style="color:red"><b>install R for the first time</b></span> que aparecerá na próxima tela.
+</p>
+<!-- <img src='/post/baixar.png' /> -->
+<p><img src="/post/baixar.png" /></p>
+<p style="color:black; font-family:sans-serif;margin-bottom: 30px;margin-top: 30px">
+Por fim, clicar em “<strong>Download R 3.6.2 for Windows</strong>” para baixar a última versão disponível até o momento.
+</p>
+<p><img src="/post/baixar1.png" /></p>
+<p style="color:black; font-family:sans-serif;margin-top: 30px;margin-bottom: 30px">
+Após o download do instalador, é só executá-lo e dar as devidas permissões para realizar o procedimento da instalação. Uma dica é quando aparecer a tela abaixo, modificar o diretório para uma pasta onde não necessite de permissão do administrador para futuras instalações de pacotes. Geralmente o instalador vai indicar que a pasta a ser instalada será “Program Files”, portanto, sugere-se a modificação para outra, no meu caso, indiquei a pasta “Documents”.
+</p>
+<p><img src="/post/Instalar.png" /></p>
+<p style="color:black; font-family:sans-serif;margin-top: 30px;margin-bottom: 30px">
+Agora o próximo passo é a instalação do Rstudio. A grosso modo, esse é um software que é uma interface gráfica para executar e criar códigos, tanto de R, como de outras linguages. Apesar de ser um software pago, existe uma versão gratuita que pode ser utilizada e atende todas as necessidade de um usuário comum ou que necessite apenas a realização de análises em seu desktop. Para isso, deve-se baixar o <strong>RStudio Desktop</strong> em sua versão FREE <a href="https://rstudio.com/products/rstudio/download/#download" style="color:blue">clicando aqui</a>.
+</p>
+<p><img src="/post/Instalar_rstudio.png" /></p>
+<p style="color:black; font-family:sans-serif;margin-top: 30px;margin-bottom: 5px">
+Pronto, tudo já está instalado. Agora devemos abrir o Rstudio e ele já irá busar a instalação do R automaticamente. Ao abrirmos o programa, aperte as teclas <strong>ctrl + shift + N</strong> em conjunto, posteriormente nos deparamos com a seguinte tela:
+</p>
+<p><img src="/post/rstudio.png" /></p>
+<p style="color:black; font-family:sans-serif;margin-top: 30px;margin-bottom: 5px">
+Pode-se dizer que existem quatro principais áreas de trabalho que serão muito utilizadas. A <strong>primeira</strong> é o console, que é onde aparecerão os resultados de algum comando executado (os comandos também podem ser digitados diretamente nessa área). A <strong>segunda</strong> área é onde se localiza o <em>rscript</em> ou rotina que conterá os cógigos para determinadas tarefas que vamos realizar. Esse é um arquivo que pode ser salvo e terá a extensão <strong>.R</strong>. A <strong>terceira</strong> concentra algumas abas muito importantes: <em>package</em> que é onde podemos realizar a instalação manualmente de pacotes, o <em>plots</em> que auxilia na visualização de resultados gráficos e o <em>help</em>, que fornece ajuda e a documentação dos pacotes ou funções do R. Por fim, a <strong>quarta</strong> área é o <em>environment</em> ou podemos chamar de <em>workspace</em> concentrará todos os objetos criados, tais como bases de dados importadas ou geradas, listas e funções.
+</p>
+<h3 style="color:black; font-family:sans-serif;">
+Conceitos iniciais
+</h3>
+<p style="color:black; font-family:sans-serif;margin-top: 30px;margin-bottom: 5px">
+A primeira coisa que devemos aprender é que com o R podemos realizar a mesma tarefa de diversas maneiras. Podemos utilizar as funções do <em>base</em> do R ou funções de pacotes ou <em>package</em>. Os pacotes são elaborados e submetidos ao repositório do R, sendo que atualmente o total de pacotes disponíveis é de 15.359 (em 01/02/2020).
+</p>
+<p style="color:black; font-family:sans-serif;margin-bottom: 5px">
+A segunda maneira é instalar via linha de comando. Essa maneira é bem mais rápida e menos tediosa do que ter que usar o mouse e abrir a janela para instalação. Por exemp, supondo que vamos instalar o pacote <strong>MASS</strong>:
+</p>
+<pre class="r bordepre"><code>install.packages(&#39;MASS&#39;)</code></pre>
+<pre class="bordepos"><code>## package &#39;MASS&#39; successfully unpacked and MD5 sums checked
+## 
+## The downloaded binary packages are in
+##  C:\Users\William\AppData\Local\Temp\Rtmpu6RdAk\downloaded_packages</code></pre>
+<p style="color:black; font-family:sans-serif;margin-bottom: 5px">
+Podemos iniciar com um importante esclarecimento: tudo que estiver após um <strong>#</strong> será um comentário. Ou seja, o R vai ler, contudo, não irá processar nenhum cálculo ou função que está após esse comentário. Em programação é muito útil quando desejamos omitir uma linha ou uma parte de um código sem necessariamente excluí-la, e principalmente, para que possamos colocar explicações sobre determinada linha ou função. Imagine a situação em que você fez um código e vai abrir depois de dois anos, qual seria a chance de lembrar da rotina inteira, então aquele comentário poderá lhe ajudar a lembrar. Vamos começar a executar comandos simples que todo iniciante já fez, como por exemplo, o mais clássico de todos com o a função <strong>print</strong>:
+</p>
+<pre class="r bordepre"><code># Este é um comentário
+print(&quot;Hello, World!&quot;)</code></pre>
+<pre class="bordepos"><code>## [1] &quot;Hello, World!&quot;</code></pre>
+<p style="color:black; font-family:sans-serif;margin-bottom: 5px">
+Observe que tudo que for <em>string</em>, deverá estar dentro de aspas, que pode ser a simpless ou dupla:
+</p>
+<pre class="r bordepre"><code>print(&quot;aspas duplas&quot;)</code></pre>
+<pre class="bordepos"><code>## [1] &quot;aspas duplas&quot;</code></pre>
+<pre class="r bordepre"><code>print(&#39;aspas simples&#39;)</code></pre>
+<pre class="bordepos"><code>## [1] &quot;aspas simples&quot;</code></pre>
+<p style="color:black; font-family:sans-serif;margin-bottom: 5px">
+A grosso modo, uma <em>string</em> é um ou uma sequência de caracteres, e é por isso que devemos indicar para o R que o argumento dentro da função que irá “printar” na tela será um caractere ou palavra. Quando estamos trabalhando com números e queiramos que ele seja interpretado como número, basta colocar o valor sem a aspas. Podemos mandar ele printar a soma 1+2:
+</p>
+<pre class="r bordepre"><code>print(1) # pritando um valor numérico</code></pre>
+<pre class="bordepos"><code>## [1] 1</code></pre>
+<pre class="r bordepre"><code>print(1+2) # exibindo a soma de dois números</code></pre>
+<pre class="bordepos"><code>## [1] 3</code></pre>
+<p style="color:black; font-family:sans-serif;margin-bottom: 5px">
+E como faremos em uma situação em que queremos exibir soma de duas <em>strings</em>? (entenda-se aqui a soma de strings como a união delas). Para isso podemos utilizar a função <strong>paste0</strong>. Todo resultado dessa função será uma <em>string</em>, guarde isso.
+</p>
+<pre class="r bordepre"><code>paste0(1) # pritando um valor numérico</code></pre>
+<pre class="bordepos"><code>## [1] &quot;1&quot;</code></pre>
+<pre class="r bordepre"><code>paste0(1+2) # exibindo a soma de dois números em que a saída será uma string</code></pre>
+<pre class="bordepos"><code>## [1] &quot;3&quot;</code></pre>
+<pre class="r bordepre"><code>paste0(&#39;A&#39;,&#39;B&#39;) # exibindo a união de dois caracteres</code></pre>
+<pre class="bordepos"><code>## [1] &quot;AB&quot;</code></pre>
+<h3 style="color:black; font-family:sans-serif;">
+Conclusão
+</h3>
+<p style="color:black; font-family:sans-serif;margin-bottom: 5px">
+No post de hoje aprendemos como e onde baixar/instalar o R e Rstudio. Adicionalmente, vimos funções e características básicas, como numéricos e caracteres, bem como, a instalação de pacotes. No próximo post, vamos realizar um aprofundamento sobre tipos de dados, variáveis, vetores, listas e data frame.
+</p>
+<style type="text/css">
+<style>
+.h3{
+ margin-top: 10px;
+ margin-bottom: 10px;
+}  
+
+.bordepre{
+  border: solid;
+  border-style:solid;
+  border-width: thin;
+  border-color: #A8A8A8;
+  font-size: 12px;
+  padding: 1mm;
+  color: black;
+  font-weight: normal;
+  background-color:#F5F5F5;
+    
+}
+.bordepos {
+  border: solid;
+  border-style:solid;
+  border-width: thin;
+  border-color: #A8A8A8;
+  color: black;
+  background-color:#F5F5F5;
+  padding: 1mm;
+  font-size: 12px;
+  
+  
+}
+</style>
+</style>
+
+            </div>
+        </div>
+    </div>
+    <div class="column is-3">
+        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+    <div class="card-body">
+        <h1 class="card-title is-5">Tags</h1>
+        <div class="tags">
+        
+            <span class="tag "><a href="/tags/r">r</a></span>
+        
+            <span class="tag "><a href="/tags/rstudio">rstudio</a></span>
+        
+            <span class="tag "><a href="/tags/teste">teste</a></span>
+        
+        </div>          
+    </div>
+</div>
+
+<br>
+        <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
+    <div class="card-body">
+        <h1 class="card-title is-5">Posts Recentes</h1>
+        
+            <h1 class="card-link"><a href="/post/instalando-o-r-e-rstudio/">Instalando o R e Rstudio</a></h1>
+            <time class="has-text-grey-light is-size-7">31 January 2020</time>
+        
+    </div>
+</div>
+    <br>
+                
+
+
+    
+<br>
+        <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
+    <div class="card-body">
+        <h1 class="card-title is-5">Arquivos</h1>
+        
+            <a class="card-link" href="/archives/2020">2020</a> (1)<br>
+        
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+    </div>
+</div>
+
+<footer class="footer has-background-grey-darker has-text-white">
+    <div class="content has-text-centered">
+        <p>
+            <span class="icon is-large"><a href="https://www.facebook.com/william.barbosapg" class="mysocial" rel="me"><i class="fab fa-facebook fa-3x"></i></a></span>&nbsp;&nbsp;
+            <span class="icon is-large"><a href="https://www.youtube.com/" class="mysocial" rel="me"><i class="fab fa-youtube fa-3x"></i></a></span>&nbsp;&nbsp;
+            <span class="icon is-large"><a href="https://github.com/william-barbosa" class="mysocial" rel="me"><i class="fab fa-github fa-3x"></i></a></span>&nbsp;&nbsp;
+            <span class="icon is-large"><a href="https://linkedin.com/in/william-barbosa-796309179/" class="mysocial" rel="me"><i class="fab fa-linkedin fa-3x"></i></a></span>&nbsp;&nbsp;
+            <br><br>
+            Copyright &copy; Código Livre Economy 2020 - Criado por <a href="https://linkedin.com/in/william-barbosa-796309179" class="mysocial">William Barbosa</a>
+           
+        </p>
+    </div>
+</footer>
+
+<script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+</body>
+</html>

@@ -5,18 +5,18 @@
     <description>Recent content in 2020 on Código Livre Economy</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2018–2020, @william-barbosa</copyright>
-    <lastBuildDate>Wed, 03 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 31 Jan 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="/archives/2020/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Teste 2</title>
-      <link>/post/teste-2/</link>
-      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
+      <title>Instalando o R e Rstudio</title>
+      <link>/post/instalando-o-r-e-rstudio/</link>
+      <pubDate>Fri, 31 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/teste-2/</guid>
-      <description>texto de teste</description>
+      <guid>/post/instalando-o-r-e-rstudio/</guid>
+      <description>IntroduçãoEste é um dos primeiros posts introdutórios sobre a utilização do R para análise de dados e modelagem econométrica que serão publicados neste blog. R é uma linguagem de programação muito utilizada, tanto fora, quanto dentro do Brasil e que vem se intensificando ao longo dos últimos anos entre os pesquisadores de diversas áreas na esfera acadêmica. Destaca-se que essa linguagem não se limita somente aos pesquisadores, mas também é notável a sua utilização por profissionais.</description>
     </item>
     
     <item>
