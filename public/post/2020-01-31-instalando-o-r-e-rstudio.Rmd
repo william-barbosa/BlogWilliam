@@ -18,13 +18,16 @@ knitr::opts_chunk$set(echo = TRUE)
 Introdução 
 </h3>
 <p style="color:black; font-family:sans-serif;margin-bottom: 5px;">
-Este é um dos primeiros posts introdutórios sobre a utilização do R para análise de dados e modelagem econométrica que serão publicados neste blog. R é uma linguagem de programação muito utilizada, tanto fora, quanto dentro do Brasil e que vem se intensificando ao longo dos últimos anos entre os pesquisadores de diversas áreas na esfera acadêmica. Destaca-se que essa linguagem não se limita somente aos pesquisadores, mas também é notável a sua  utilização por profissionais.
+Este é um dos primeiros posts introdutórios sobre a utilização do R para análise de dados e modelagem econométrica que serão publicados neste blog. Decidi começar pelo R porque há um bom tempo já estou trabalhando com essa linguagem, bem como, porque vários colegas estudantes da áre de _Ciências Sociais Aplicadas_ demonstram interesse, não só na aplicação de seus estudos, mas também para a libertação de softwares pagos ou das tediosas e ineficientes planilhas eletrônicas.
+</p>
+<p style="color:black; font-family:sans-serif;margin-bottom: 5px;">
+R é uma linguagem de programação muito utilizada no Brasil e que vem se intensificando ao longo dos últimos anos entre os pesquisadores de diversas áreas na esfera acadêmica. Destaca-se que essa linguagem não se limita somente aos pesquisadores, mas também é notável a sua  utilização por profissionais, como por exemplo no mercado financeiro. A curva de aprendizado dessa linguagem é muito elevada, com um pouco de força de vontade e acesso à internet, qualquer pessoa pode evoluir rapidamente.
 </p>
 <p style="color:black; font-family:sans-serif;margin-bottom: 5px;">
 Baseando-se na linguagem S, o **R** originalmente surgiu em meados de 1990. O R é uma linguagem poderosa na manipulação e análise de dados, contendo uma enorme variedade de técnicas estatísticas, tais como modelos lineares, não lineares, testes estatísticos, séries temporais, espaciais, classificação e agrupamento de dados. Uma das principais vantagens do R é que ele é disponibilizado como Software Livre e pode ser executado na maioria dos sistemas operacionais (inclusive em dispositivos móveis como o Android).
 </p>
 <p style="color:black; font-family:sans-serif;margin-bottom: 5px;">
-Uma segunda vantagem da utilização do R é que também existe uma grande variedade de pacotes que auxiliam nas mais diversas tarefas rotineiras, tais como a manipulação de dados, por exemplo com o **dplyr**; ou a visualização gráfica com o **ggplot2**. A terceira vantagem é que existem muitas listas de discussões que podem auxiliar no entendimento da linguagem e de funções de pacotes em específicos. A pergunta "será que é possível fazer com R?" deve ser substituída para "como fazer em R?". Sim, o R é capaz de fazer inúmeras coisas, que vão desde salvar uma base de dados em um formato em particular, até páginas e aplicações web.
+Uma segunda vantagem da utilização do R é que também existe uma grande variedade de pacotes que auxiliam nas mais diversas tarefas rotineiras, tais como a manipulação de dados, por exemplo com o **dplyr**; ou a visualização gráfica com o **ggplot2**. A terceira vantagem é que existem muitas listas de discussões que podem auxiliar no entendimento da linguagem e de funções de algum pacote em específico. A pergunta "será que é possível fazer com R?" deve ser substituída para "como fazer em R?". Sim, o R é capaz de fazer inúmeras coisas, que vão desde salvar uma base de dados em um formato em particular, até páginas e aplicações web.
 </p>
 <h3 style="color:black; font-family:sans-serif;"> Objetivo: </h3>
 
@@ -66,7 +69,7 @@ Pronto, tudo já está instalado. Agora devemos abrir o Rstudio e ele já irá b
 ![](/post/rstudio.png) 
 
 <p style="color:black; font-family:sans-serif;margin-top: 30px;margin-bottom: 5px">
-Pode-se dizer que existem quatro principais áreas de trabalho que serão muito utilizadas. A **primeira** é o console, que é onde aparecerão os resultados de algum comando executado (os comandos também podem ser digitados diretamente nessa área). A **segunda** área é onde se localiza o _rscript_ ou rotina que conterá os cógigos para determinadas tarefas que vamos realizar. Esse é um arquivo que pode ser salvo e terá a extensão **.R**. A **terceira** concentra algumas abas muito importantes: _package_ que é onde podemos realizar a instalação manualmente de pacotes, o _plots_ que auxilia na visualização de resultados gráficos e o _help_, que fornece ajuda e a documentação dos pacotes ou funções do R. Por fim, a **quarta** área é o _environment_ ou podemos chamar de _workspace_ concentrará todos os objetos criados, tais como bases de dados importadas ou geradas, listas e funções. 
+Pode-se dizer que existem quatro principais áreas de trabalho que serão muito utilizadas. A **primeira** é o console, que é onde aparecerão os resultados de algum comando executado (os comandos também podem ser digitados diretamente nesse campo). A **segunda** área é onde se localiza o _rscript_ (ou rotina) que conterá os cógigos para determinadas tarefas que vamos realizar. Esse é um arquivo que pode ser salvo em uma pasta externa no PC e possuirá a extensão **.R**. A **terceira** concentra algumas abas muito importantes: _package_ que é onde podemos realizar a instalação manualmente de pacotes, o _plots_ que auxilia na visualização de resultados gráficos e o _help_, fornece ajuda e a documentação dos pacotes ou funções do R. Por fim, a **quarta** área é o _environment_ ou podemos chamar de _workspace_ concentrará todos os objetos criados, tais como bases de dados importadas ou geradas, listas e funções. 
 </p>
 
 <h3 style="color:black; font-family:sans-serif;">  
@@ -74,18 +77,18 @@ Conceitos iniciais
 </h3>
 
 <p style="color:black; font-family:sans-serif;margin-top: 30px;margin-bottom: 5px">
-A primeira coisa que devemos aprender é que com o R podemos realizar a mesma tarefa de diversas maneiras. Podemos utilizar as funções do _base_ do R ou funções de pacotes ou _package_. Os pacotes são elaborados e submetidos ao repositório do R, sendo que atualmente o total de pacotes disponíveis é de 15.359 (em 01/02/2020). 
+A primeira coisa que devemos aprender é que com o R podemos realizar a mesma tarefa de diversas maneiras. Podemos utilizar as funções do R _base_ (são funções nativas do R, isto é, não são oriundas de pacotes externos) ou funções de pacotes ou _package_. Os pacotes são elaborados e submetidos ao repositório do R. A título de curiosidade, atualmente o total de pacotes disponíveis é de 15.359!(em 01/02/2020). 
 </p>
 
 <p style="color:black; font-family:sans-serif;margin-bottom: 5px">
-A segunda maneira é instalar via linha de comando. Essa maneira é bem mais rápida e menos tediosa do que ter que usar o mouse e abrir a janela para instalação. Por exemp, supondo que vamos instalar o pacote **MASS**:
+A segunda maneira é instalar via linha de comando. Essa maneira é bem mais rápida e menos tediosa do que ter que usar o mouse para abrir a janela para instalação. Por exemp, supondo que vamos instalar o pacote **MASS**:
 </p>
 
 ```{r, class.output = "bordepos", class.source="bordepre",echo=TRUE}
 install.packages('MASS')
 ```
 <p style="color:black; font-family:sans-serif;margin-bottom: 5px">
-Podemos iniciar com um importante esclarecimento: tudo que estiver após um **#** será um comentário. Ou seja, o R vai ler, contudo, não irá processar nenhum cálculo ou função que está após esse comentário. Em programação é muito útil quando desejamos omitir uma linha ou uma parte de um código sem necessariamente excluí-la, e principalmente, para que possamos colocar explicações sobre determinada linha ou função. Imagine a situação em que você fez um código e vai abrir depois de dois anos, qual seria a chance de lembrar da rotina inteira, então aquele comentário poderá lhe ajudar a lembrar. Vamos começar a executar comandos simples que todo iniciante já fez, como por exemplo, o mais clássico de todos com o a função **print**:
+Podemos iniciar com um importante esclarecimento: tudo que estiver após um **#** será um comentário. Ou seja, o R vai ler, contudo, não irá processar nenhum cálculo ou função que está após esse comentário. Em programação é muito útil quando desejamos omitir uma linha ou uma parte de um código sem necessariamente excluí-la, e principalmente, para que possamos colocar breves explicações sobre determinada linha ou função. Imagine a situação em que você fez um código e vai abrir depois de dois anos. Qual seria a chance de lembrar da rotina inteira? Então, aquele comentário poderá lhe ajudar a lembrar do motivo para tal procedimento. Vamos começar a executar comandos simples que todo iniciante já fez, como por exemplo, o mais clássico de todos como a função **print**:
 </p>
 
 ```{r, class.output = "bordepos", class.source="bordepre",echo=TRUE}
@@ -94,14 +97,14 @@ print("Hello, World!")
 ```
 
 <p style="color:black; font-family:sans-serif;margin-bottom: 5px">
-Observe que tudo que for _string_, deverá estar dentro de aspas, que pode ser a simpless ou dupla:
+Observe que tudo que for _string_, deverá estar dentro de aspas, que pode ser a simples ou dupla:
 </p>
 ```{r, class.output = "bordepos", class.source="bordepre",echo=TRUE}
 print("aspas duplas")
 print('aspas simples')
 ```
 <p style="color:black; font-family:sans-serif;margin-bottom: 5px">
-A grosso modo, uma _string_ é um ou uma sequência de caracteres, e é por isso que devemos indicar para o R que o argumento dentro da função que irá "printar" na tela será um caractere ou palavra. Quando estamos trabalhando com números e queiramos que ele seja interpretado como número, basta colocar o valor sem a aspas. Podemos mandar ele printar a soma 1+2: 
+A grosso modo, uma _string_ é um ou uma sequência de caracteres, e é por isso que devemos indicar para o R que o argumento dentro da função que irá "printar" na tela será um caractere ou palavra. Quando estamos trabalhando com números e desejamos que ele seja interpretado como número, basta colocar o valor sem a aspas. Podemos mandar ele printar a soma 1+2: 
 </p>
 
 ```{r, class.output = "bordepos", class.source="bordepre",echo=TRUE}
@@ -109,10 +112,11 @@ print(1) # pritando um valor numérico
 print(1+2) # exibindo a soma de dois números
 ```
 <p style="color:black; font-family:sans-serif;margin-bottom: 5px">
-E como faremos em uma situação em que queremos exibir soma de duas _strings_? (entenda-se aqui a soma de strings como a união delas). Para isso podemos utilizar a função **paste0**. Todo resultado dessa função será uma _string_, guarde isso.
+E como faremos em uma situação em que queremos exibir a soma como uma _string_? Para isso podemos utilizar a expressão entre aspas. Caso o objetivo seja a união dos valores, devemos aplicar a função **paste0**. Todo resultado dessa função será uma _string_, guarde isso (perceba que o resultado estará entre aspas, indicando que será um caractere).
 </p>
 
 ```{r, class.output = "bordepos", class.source="bordepre",echo=TRUE}
+print("1+2")
 paste0(1) # pritando um valor numérico
 paste0(1+2) # exibindo a soma de dois números em que a saída será uma string
 paste0('A','B') # exibindo a união de dois caracteres
@@ -122,7 +126,7 @@ paste0('A','B') # exibindo a união de dois caracteres
 Conclusão 
 </h3>
 <p style="color:black; font-family:sans-serif;margin-bottom: 5px">
-No post de hoje aprendemos como e onde baixar/instalar o R e Rstudio. Adicionalmente, vimos funções e características básicas, como numéricos e caracteres, bem como, a instalação de pacotes. No próximo post, vamos realizar um aprofundamento sobre tipos de dados, variáveis, vetores, listas e data frame. 
+No post de hoje aprendemos como e onde baixar/instalar o R e Rstudio. Adicionalmente, vimos funções e características básicas (muito), como classes numéricas e caracteres, bem como, a instalação de pacotes e estrutura básica do Rstudio. No próximo post, vamos realizar um aprofundamento sobre tipos de dados, variáveis, vetores, listas e data frame. 
 </p>
 
 

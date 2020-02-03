@@ -22,7 +22,20 @@
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
  
- 
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-157600400-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
 
 
 
@@ -252,13 +265,16 @@
 Introdução
 </h3>
 <p style="color:black; font-family:sans-serif;margin-bottom: 5px;">
-Este é um dos primeiros posts introdutórios sobre a utilização do R para análise de dados e modelagem econométrica que serão publicados neste blog. R é uma linguagem de programação muito utilizada, tanto fora, quanto dentro do Brasil e que vem se intensificando ao longo dos últimos anos entre os pesquisadores de diversas áreas na esfera acadêmica. Destaca-se que essa linguagem não se limita somente aos pesquisadores, mas também é notável a sua utilização por profissionais.
+Este é um dos primeiros posts introdutórios sobre a utilização do R para análise de dados e modelagem econométrica que serão publicados neste blog. Decidi começar pelo R porque há um bom tempo já estou trabalhando com essa linguagem, bem como, porque vários colegas estudantes da áre de <em>Ciências Sociais Aplicadas</em> demonstram interesse, não só na aplicação de seus estudos, mas também para a libertação de softwares pagos ou das tediosas e ineficientes planilhas eletrônicas.
+</p>
+<p style="color:black; font-family:sans-serif;margin-bottom: 5px;">
+R é uma linguagem de programação muito utilizada no Brasil e que vem se intensificando ao longo dos últimos anos entre os pesquisadores de diversas áreas na esfera acadêmica. Destaca-se que essa linguagem não se limita somente aos pesquisadores, mas também é notável a sua utilização por profissionais, como por exemplo no mercado financeiro. A curva de aprendizado dessa linguagem é muito elevada, com um pouco de força de vontade e acesso à internet, qualquer pessoa pode evoluir rapidamente.
 </p>
 <p style="color:black; font-family:sans-serif;margin-bottom: 5px;">
 Baseando-se na linguagem S, o <strong>R</strong> originalmente surgiu em meados de 1990. O R é uma linguagem poderosa na manipulação e análise de dados, contendo uma enorme variedade de técnicas estatísticas, tais como modelos lineares, não lineares, testes estatísticos, séries temporais, espaciais, classificação e agrupamento de dados. Uma das principais vantagens do R é que ele é disponibilizado como Software Livre e pode ser executado na maioria dos sistemas operacionais (inclusive em dispositivos móveis como o Android).
 </p>
 <p style="color:black; font-family:sans-serif;margin-bottom: 5px;">
-Uma segunda vantagem da utilização do R é que também existe uma grande variedade de pacotes que auxiliam nas mais diversas tarefas rotineiras, tais como a manipulação de dados, por exemplo com o <strong>dplyr</strong>; ou a visualização gráfica com o <strong>ggplot2</strong>. A terceira vantagem é que existem muitas listas de discussões que podem auxiliar no entendimento da linguagem e de funções de pacotes em específicos. A pergunta “será que é possível fazer com R?” deve ser substituída para “como fazer em R?”. Sim, o R é capaz de fazer inúmeras coisas, que vão desde salvar uma base de dados em um formato em particular, até páginas e aplicações web.
+Uma segunda vantagem da utilização do R é que também existe uma grande variedade de pacotes que auxiliam nas mais diversas tarefas rotineiras, tais como a manipulação de dados, por exemplo com o <strong>dplyr</strong>; ou a visualização gráfica com o <strong>ggplot2</strong>. A terceira vantagem é que existem muitas listas de discussões que podem auxiliar no entendimento da linguagem e de funções de algum pacote em específico. A pergunta “será que é possível fazer com R?” deve ser substituída para “como fazer em R?”. Sim, o R é capaz de fazer inúmeras coisas, que vão desde salvar uma base de dados em um formato em particular, até páginas e aplicações web.
 </p>
 <h3 style="color:black; font-family:sans-serif;">
 Objetivo:
@@ -292,45 +308,47 @@ Pronto, tudo já está instalado. Agora devemos abrir o Rstudio e ele já irá b
 </p>
 <p><img src="/post/rstudio.png" /></p>
 <p style="color:black; font-family:sans-serif;margin-top: 30px;margin-bottom: 5px">
-Pode-se dizer que existem quatro principais áreas de trabalho que serão muito utilizadas. A <strong>primeira</strong> é o console, que é onde aparecerão os resultados de algum comando executado (os comandos também podem ser digitados diretamente nessa área). A <strong>segunda</strong> área é onde se localiza o <em>rscript</em> ou rotina que conterá os cógigos para determinadas tarefas que vamos realizar. Esse é um arquivo que pode ser salvo e terá a extensão <strong>.R</strong>. A <strong>terceira</strong> concentra algumas abas muito importantes: <em>package</em> que é onde podemos realizar a instalação manualmente de pacotes, o <em>plots</em> que auxilia na visualização de resultados gráficos e o <em>help</em>, que fornece ajuda e a documentação dos pacotes ou funções do R. Por fim, a <strong>quarta</strong> área é o <em>environment</em> ou podemos chamar de <em>workspace</em> concentrará todos os objetos criados, tais como bases de dados importadas ou geradas, listas e funções.
+Pode-se dizer que existem quatro principais áreas de trabalho que serão muito utilizadas. A <strong>primeira</strong> é o console, que é onde aparecerão os resultados de algum comando executado (os comandos também podem ser digitados diretamente nesse campo). A <strong>segunda</strong> área é onde se localiza o <em>rscript</em> (ou rotina) que conterá os cógigos para determinadas tarefas que vamos realizar. Esse é um arquivo que pode ser salvo em uma pasta externa no PC e possuirá a extensão <strong>.R</strong>. A <strong>terceira</strong> concentra algumas abas muito importantes: <em>package</em> que é onde podemos realizar a instalação manualmente de pacotes, o <em>plots</em> que auxilia na visualização de resultados gráficos e o <em>help</em>, fornece ajuda e a documentação dos pacotes ou funções do R. Por fim, a <strong>quarta</strong> área é o <em>environment</em> ou podemos chamar de <em>workspace</em> concentrará todos os objetos criados, tais como bases de dados importadas ou geradas, listas e funções.
 </p>
 <h3 style="color:black; font-family:sans-serif;">
 Conceitos iniciais
 </h3>
 <p style="color:black; font-family:sans-serif;margin-top: 30px;margin-bottom: 5px">
-A primeira coisa que devemos aprender é que com o R podemos realizar a mesma tarefa de diversas maneiras. Podemos utilizar as funções do <em>base</em> do R ou funções de pacotes ou <em>package</em>. Os pacotes são elaborados e submetidos ao repositório do R, sendo que atualmente o total de pacotes disponíveis é de 15.359 (em 01/02/2020).
+A primeira coisa que devemos aprender é que com o R podemos realizar a mesma tarefa de diversas maneiras. Podemos utilizar as funções do R <em>base</em> (são funções nativas do R, isto é, não são oriundas de pacotes externos) ou funções de pacotes ou <em>package</em>. Os pacotes são elaborados e submetidos ao repositório do R. A título de curiosidade, atualmente o total de pacotes disponíveis é de 15.359!(em 01/02/2020).
 </p>
 <p style="color:black; font-family:sans-serif;margin-bottom: 5px">
-A segunda maneira é instalar via linha de comando. Essa maneira é bem mais rápida e menos tediosa do que ter que usar o mouse e abrir a janela para instalação. Por exemp, supondo que vamos instalar o pacote <strong>MASS</strong>:
+A segunda maneira é instalar via linha de comando. Essa maneira é bem mais rápida e menos tediosa do que ter que usar o mouse para abrir a janela para instalação. Por exemp, supondo que vamos instalar o pacote <strong>MASS</strong>:
 </p>
 <pre class="r bordepre"><code>install.packages(&#39;MASS&#39;)</code></pre>
 <pre class="bordepos"><code>## package &#39;MASS&#39; successfully unpacked and MD5 sums checked
 ## 
 ## The downloaded binary packages are in
-##  C:\Users\William\AppData\Local\Temp\Rtmpu6RdAk\downloaded_packages</code></pre>
+##  C:\Users\William\AppData\Local\Temp\RtmpKKacdd\downloaded_packages</code></pre>
 <p style="color:black; font-family:sans-serif;margin-bottom: 5px">
-Podemos iniciar com um importante esclarecimento: tudo que estiver após um <strong>#</strong> será um comentário. Ou seja, o R vai ler, contudo, não irá processar nenhum cálculo ou função que está após esse comentário. Em programação é muito útil quando desejamos omitir uma linha ou uma parte de um código sem necessariamente excluí-la, e principalmente, para que possamos colocar explicações sobre determinada linha ou função. Imagine a situação em que você fez um código e vai abrir depois de dois anos, qual seria a chance de lembrar da rotina inteira, então aquele comentário poderá lhe ajudar a lembrar. Vamos começar a executar comandos simples que todo iniciante já fez, como por exemplo, o mais clássico de todos com o a função <strong>print</strong>:
+Podemos iniciar com um importante esclarecimento: tudo que estiver após um <strong>#</strong> será um comentário. Ou seja, o R vai ler, contudo, não irá processar nenhum cálculo ou função que está após esse comentário. Em programação é muito útil quando desejamos omitir uma linha ou uma parte de um código sem necessariamente excluí-la, e principalmente, para que possamos colocar breves explicações sobre determinada linha ou função. Imagine a situação em que você fez um código e vai abrir depois de dois anos. Qual seria a chance de lembrar da rotina inteira? Então, aquele comentário poderá lhe ajudar a lembrar do motivo para tal procedimento. Vamos começar a executar comandos simples que todo iniciante já fez, como por exemplo, o mais clássico de todos como a função <strong>print</strong>:
 </p>
 <pre class="r bordepre"><code># Este é um comentário
 print(&quot;Hello, World!&quot;)</code></pre>
 <pre class="bordepos"><code>## [1] &quot;Hello, World!&quot;</code></pre>
 <p style="color:black; font-family:sans-serif;margin-bottom: 5px">
-Observe que tudo que for <em>string</em>, deverá estar dentro de aspas, que pode ser a simpless ou dupla:
+Observe que tudo que for <em>string</em>, deverá estar dentro de aspas, que pode ser a simples ou dupla:
 </p>
 <pre class="r bordepre"><code>print(&quot;aspas duplas&quot;)</code></pre>
 <pre class="bordepos"><code>## [1] &quot;aspas duplas&quot;</code></pre>
 <pre class="r bordepre"><code>print(&#39;aspas simples&#39;)</code></pre>
 <pre class="bordepos"><code>## [1] &quot;aspas simples&quot;</code></pre>
 <p style="color:black; font-family:sans-serif;margin-bottom: 5px">
-A grosso modo, uma <em>string</em> é um ou uma sequência de caracteres, e é por isso que devemos indicar para o R que o argumento dentro da função que irá “printar” na tela será um caractere ou palavra. Quando estamos trabalhando com números e queiramos que ele seja interpretado como número, basta colocar o valor sem a aspas. Podemos mandar ele printar a soma 1+2:
+A grosso modo, uma <em>string</em> é um ou uma sequência de caracteres, e é por isso que devemos indicar para o R que o argumento dentro da função que irá “printar” na tela será um caractere ou palavra. Quando estamos trabalhando com números e desejamos que ele seja interpretado como número, basta colocar o valor sem a aspas. Podemos mandar ele printar a soma 1+2:
 </p>
 <pre class="r bordepre"><code>print(1) # pritando um valor numérico</code></pre>
 <pre class="bordepos"><code>## [1] 1</code></pre>
 <pre class="r bordepre"><code>print(1+2) # exibindo a soma de dois números</code></pre>
 <pre class="bordepos"><code>## [1] 3</code></pre>
 <p style="color:black; font-family:sans-serif;margin-bottom: 5px">
-E como faremos em uma situação em que queremos exibir soma de duas <em>strings</em>? (entenda-se aqui a soma de strings como a união delas). Para isso podemos utilizar a função <strong>paste0</strong>. Todo resultado dessa função será uma <em>string</em>, guarde isso.
+E como faremos em uma situação em que queremos exibir a soma como uma <em>string</em>? Para isso podemos utilizar a expressão entre aspas. Caso o objetivo seja a união dos valores, devemos aplicar a função <strong>paste0</strong>. Todo resultado dessa função será uma <em>string</em>, guarde isso (perceba que o resultado estará entre aspas, indicando que será um caractere).
 </p>
+<pre class="r bordepre"><code>print(&quot;1+2&quot;)</code></pre>
+<pre class="bordepos"><code>## [1] &quot;1+2&quot;</code></pre>
 <pre class="r bordepre"><code>paste0(1) # pritando um valor numérico</code></pre>
 <pre class="bordepos"><code>## [1] &quot;1&quot;</code></pre>
 <pre class="r bordepre"><code>paste0(1+2) # exibindo a soma de dois números em que a saída será uma string</code></pre>
@@ -341,7 +359,7 @@ E como faremos em uma situação em que queremos exibir soma de duas <em>strings
 Conclusão
 </h3>
 <p style="color:black; font-family:sans-serif;margin-bottom: 5px">
-No post de hoje aprendemos como e onde baixar/instalar o R e Rstudio. Adicionalmente, vimos funções e características básicas, como numéricos e caracteres, bem como, a instalação de pacotes. No próximo post, vamos realizar um aprofundamento sobre tipos de dados, variáveis, vetores, listas e data frame.
+No post de hoje aprendemos como e onde baixar/instalar o R e Rstudio. Adicionalmente, vimos funções e características básicas (muito), como classes numéricas e caracteres, bem como, a instalação de pacotes e estrutura básica do Rstudio. No próximo post, vamos realizar um aprofundamento sobre tipos de dados, variáveis, vetores, listas e data frame.
 </p>
 <style type="text/css">
 <style>
@@ -389,8 +407,6 @@ No post de hoje aprendemos como e onde baixar/instalar o R e Rstudio. Adicionalm
             <span class="tag "><a href="/tags/r">r</a></span>
         
             <span class="tag "><a href="/tags/rstudio">rstudio</a></span>
-        
-            <span class="tag "><a href="/tags/teste">teste</a></span>
         
         </div>          
     </div>

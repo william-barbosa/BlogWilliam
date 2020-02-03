@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = TRUE)
   
   .column-left{
   float: left;
-  width: 33%;
+  width: 80%;
   text-align: left;
 }
 .column-center{
@@ -27,7 +27,7 @@ knitr::opts_chunk$set(echo = TRUE)
 }
 .column-right{
   float: right;
-  width: 33%;
+  width: 20%;
   text-align: right;
    margin-top: 25px;
 }
@@ -54,19 +54,16 @@ font-style: italic;
 <div class="linha-divisoria">
 </div>
 
-
-
 <div class="column-left">
-
 **Nome: William Barbosa**          
 
 **Nacionalidade:** Brasileiro             
 
-**Nascimento:**         15/04/1989
+**Nascimento:** 15/04/1989
 
-**Naturalidade:        ** Ponta Grossa - PR
+**Naturalidade:** Ponta Grossa - PR
 
-**Residência:        ** Piracicaba - SP
+**Residência:** Piracicaba - SP
 
 </div>
 
@@ -76,12 +73,8 @@ knitr::include_graphics("perfil.jpg")
 ```
 </div> 
 
-
-
-
-**Endereço profissional**
-
-Universidade de São Paulo, Escola Superior de Agricultura Luiz de Queiroz, Departamento de Economia Administração e Sociologia. Av. Pádua Dias, 11, Agronomia, CEP: 13418900 - Piracicaba, SP - Brasil
+<div class="column-left">
+**Endereço profissional** Universidade de São Paulo, Escola Superior de Agricultura Luiz de Queiroz, Departamento de Economia Administração e Sociologia. Av. Pádua Dias, 11, Agronomia, CEP: 13418900 - Piracicaba, SP - Brasil
 
 **Telefone:** (19) 34294444
 
@@ -91,7 +84,7 @@ E-mail: williambarbosa@usp.br / william.economist@gmail.com
 
 <div class="linha-divisoria">
 </div>
-
+</div>
 
 **Formação Acadêmica/Titulação**
 

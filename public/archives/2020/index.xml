@@ -16,16 +16,7 @@
       <pubDate>Fri, 31 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>/post/instalando-o-r-e-rstudio/</guid>
-      <description>IntroduçãoEste é um dos primeiros posts introdutórios sobre a utilização do R para análise de dados e modelagem econométrica que serão publicados neste blog. R é uma linguagem de programação muito utilizada, tanto fora, quanto dentro do Brasil e que vem se intensificando ao longo dos últimos anos entre os pesquisadores de diversas áreas na esfera acadêmica. Destaca-se que essa linguagem não se limita somente aos pesquisadores, mas também é notável a sua utilização por profissionais.</description>
-    </item>
-    
-    <item>
-      <title>Página de Teste dentro do Blog</title>
-      <link>/page_diversos/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/page_diversos/</guid>
-      <description>.badCode {background-color: red;}.bordepre{border: solid;border-style:solid;border-width: thin;border-color: #A8A8A8;font-size: 15px;padding: 2mm;color: black;font-weight: normal;background-color:#F5F5F5;width: 750px;}.bordered1 {border: solid;border-style:solid;border-width: thin;border-color: #A8A8A8;color: black;background-color:#F5F5F5;padding: 2mm;font-size: 14px;width: 750px;}Nova PáginaEsse é apenas um exemplo de como criar uma página dentro do blog. Ele é um arquivo simples de “.Rmd” que deve ser salvo na pasta “content”.</description>
+      <description>IntroduçãoEste é um dos primeiros posts introdutórios sobre a utilização do R para análise de dados e modelagem econométrica que serão publicados neste blog. Decidi começar pelo R porque há um bom tempo já estou trabalhando com essa linguagem, bem como, porque vários colegas estudantes da áre de Ciências Sociais Aplicadas demonstram interesse, não só na aplicação de seus estudos, mas também para a libertação de softwares pagos ou das tediosas e ineficientes planilhas eletrônicas.</description>
     </item>
     
   </channel>

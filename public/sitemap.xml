@@ -43,11 +43,12 @@
   </url>
   
   <url>
-    <loc>/main/</loc>
+    <loc>/page_diversos/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/page_diversos/</loc>
+    <loc>/main/</loc>
   </url>
   
   <url>
@@ -56,10 +57,6 @@
   
   <url>
     <loc>/perfil/</loc>
-  </url>
-  
-  <url>
-    <loc>/tags/teste/</loc>
   </url>
   
 </urlset>

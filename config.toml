@@ -4,7 +4,7 @@ author = "William Barbosa"
 copyright = "Copyright © 2018–2020, @william-barbosa"
 canonifyurls = true
 paginate = 3
-
+googleAnalytics = "UA-157600400-1"
 theme = "will-theme-blog"
 #theme ="hugo-blog-jeffprod"
 
