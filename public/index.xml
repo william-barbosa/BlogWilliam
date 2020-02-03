@@ -53,7 +53,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/perfil/</guid>
-      <description>.col2 {columns: 2 400px; /* number of columns and width in pixels*/-webkit-columns: 2 200px; /* chrome, safari */-moz-columns: 2 200px; /* firefox */}.column-left{float: left;width: 80%;text-align: left;}.column-center{display: inline-block;width: 33%;text-align: center;}.column-right{float: right;width: 20%;text-align: right;margin-top: 25px;}.comment{background-color: #DBDBDB;padding: 10px;border: 1px solid black;margin-left: 20px;border-radius: 5px;font-style: italic;}.</description>
+      <description>.col2 {columns: 2 400px; /* number of columns and width in pixels*/-webkit-columns: 2 200px; /* chrome, safari */-moz-columns: 2 200px; /* firefox */}.column-left{float: left;width: 80%;text-align: left;}.coluna-inteira{width: 100%;overflow:hidden;text-align: left;}.column-center{display: inline-block;width: 33%;text-align: center;}.column-right{float: right;width: 20%;text-align: right;margin-top: 25px;}.comment{background-color: #DBDBDB;padding: 10px;border: 1px solid black;margin-left: 20px;border-radius: 5px;font-style: italic;}.</description>
     </item>
     
   </channel>

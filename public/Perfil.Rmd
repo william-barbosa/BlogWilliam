@@ -20,6 +20,11 @@ knitr::opts_chunk$set(echo = TRUE)
   width: 80%;
   text-align: left;
 }
+.coluna-inteira{
+  width: 100%;
+  overflow:hidden;
+  text-align: left;
+}
 .column-center{
   display: inline-block;
   width: 33%;
@@ -64,64 +69,63 @@ font-style: italic;
 **Naturalidade:** Ponta Grossa - PR
 
 **Residência:** Piracicaba - SP
-
+<!--
 </div>
 
+<div class=".coluna-inteira"> -->
+
+**Endereço profissional** Universidade de São Paulo, Escola Superior de Agricultura Luiz de Queiroz, Departamento de Economia Administração e Sociologia. Av. Pádua Dias, 11, Agronomia, CEP: 13418900 - Piracicaba, SP - Brasil
+
+**Telefone:** (19) 34294444
+
+**E-mail:** williambarbosa@usp.br / william.economist@gmail.com
+</div>
 <div class="column-right">
 ```{r, echo=FALSE, out.width = '80%'}
 knitr::include_graphics("perfil.jpg")
 ```
 </div> 
 
-<div class="column-left">
-**Endereço profissional** Universidade de São Paulo, Escola Superior de Agricultura Luiz de Queiroz, Departamento de Economia Administração e Sociologia. Av. Pádua Dias, 11, Agronomia, CEP: 13418900 - Piracicaba, SP - Brasil
-
-**Telefone:** (19) 34294444
-
-Fax: (19) 34345186
-
-E-mail: williambarbosa@usp.br / william.economist@gmail.com
-
-<div class="linha-divisoria">
-</div>
-</div>
-
+<div class="coluna-inteira">
+<div class="linha-divisoria"> </div>
 **Formação Acadêmica/Titulação**
 
-**2017 - Atual      **         Doutorado em Ciências (Economia Aplicada).
+<span style="color:  blue;">**2017 - Atual**</span> Doutorado em Ciências (Economia Aplicada).
 
 Universidade de São Paulo, USP, São Paulo, Brasil
 
 Título: **CENÁRIOS DE MUDANÇAS CLIMÁTICAS NA AGRICULTURA E MIGRAÇÕES INTERNAS NO BRASIL: UMA APLICAÇÃO DO MODELO DE EQUILÍBRIO GERAL COMPUTÁVEL**
 
-Orientador: Joaquim Bento de Souza Ferreira Filho
+Orientador: <a href="http://lattes.cnpq.br/2464089587609552" style="color:blue">Joaquim Bento de Souza Ferreira Filho</a>
 
 Bolsista do(a): Coordenação de Aperfeiçoamento de Pessoal de Nível Superior
 
-**2015 - 2017**         Mestrado Em Economia e Desenvolvimento.
+<span style="color:blue;">**2015 - 2017**</span> Mestrado Em Economia e Desenvolvimento.
 
 Universidade Federal de Santa Maria, UFSM, Santa Maria, Brasil
 
 Título: **MIGRAÇÕES NO BRASIL: UMA APLICAÇÃO DO MODELO GRAVITACIONAL COM DADOS EM PAINEL (2002-2015)**, Ano de obtenção: 2017
 
-Orientador: Clailton Ataídes de Freitas
+Orientador: <a href="http://lattes.cnpq.br/6595942544054710" style="color:blue">Clailton Ataídes de Freitas</a>
 
 Bolsista do(a): Coordenação de Aperfeiçoamento de Pessoal de Nível Superior
 
-**2019        **         Especialização em MBA em Agronegócios.
+<span style="color:blue;" > **2019 - Atual** </span> Especialização em MBA em Agronegócios.
 
 Instituto de Pesquisas e Educação Continuada Economia e Gestão de Empresas, I-PECEGE, Piracicaba, Brasil
 
-**2011 - 2014**         Graduação  em Ciências Econômicas.
+<span style="color:blue;" >**2011 - 2014** </span> Graduação  em Ciências Econômicas.
 
 Universidade Estadual de Ponta Grossa, UEPG, Ponta Grossa, Brasil
 
 Título: **Análise Empírica da Evidência da Desindustrialização no Estado do Paraná no Período de 1996 a 2012**
 
-Orientador: Alex Sander Souza do Carmo
+Orientador: 
+<a href="http://lattes.cnpq.br/5354078737715477" style="color:blue">Alex Sander Souza do Carmo</a>
 
 <div class="linha-divisoria">
 </div>
+
 
 **Área de conhecimento**
 
@@ -217,14 +221,12 @@ Orientador: Alex Sander Souza do Carmo
 
 9. **BARBOSA, W.** ; PELINSKI, A. R.; CARMO, A. S. S. Existe desindustrialização no Estado do Paraná? um teste empírico para o período de 1996 a 2012. INFORME GEPEC (ONLINE). , v.19, p.55 - 79, 2015.
 
-
-
 **Trabalhos publicados em anais de eventos (completo)**
 
 1. **BARBOSA, W.** ; FREITAS, C. A.; OLIVEIRA, E. A. DESIGUALDADE DE RENDA, CAPITAL HUMANO E POPULAÇÃO RURAL-URBANA: UMA ANÁLISE DA CURVA DE KUZNETS PARA O MUNICÍPIOS BRASILEIROS (1991, 2000 E 2010) In: 54º Congresso da Sociedade Brasileira de Economia, Administração e Sociologia Rural, 2016, Maceió - AL. **Desenvolvimento, território e biodiversidade**. , 2016.
 
 2. OLIVEIRA, E. A.; **BARBOSA, W.** ; FREITAS, C. A.; CASAGRANDE, D. Estagnação da produtividade do fator trabalho no Brasil entre 1950 a 2008: uma decomposição dos fatores de curto e longo prazo. In: XXI Encontro Regional de Economia/XXII Fórum Banco do Nordeste de Desenvolvimento, 2016, Fortaleza.   **XXII Fórum Banco do Nordeste de Desenvolvimento**. , 2016.
-
+</div> 
 
 
 <div class="linha-divisoria">
