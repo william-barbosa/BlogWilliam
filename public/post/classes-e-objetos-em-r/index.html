@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Código Livre Economy  | Classes e Objetos em R</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script> 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+   
+      
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" />
+    <link rel="stylesheet" href="/css/blog.css" />
+    
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+ 
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-157600400-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+
+
+
+<style>
+
+
+
+.body {
+  font-family: 'Lucida Grande',"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  background: blanchedalmond!important;
+  color: blue!important;
+}
+
+
+
+ 
+.text-primary{
+    color: rgb(0, 0, 0)!important;
+    font-family: sans-serif!important;
+}
+
+.whiteTextOverride
+{
+ color: black !important;
+ font-family: sans-serif!important;
+}
+
+
+
+.content .media .media-content .title{
+    color: black;
+    font-family: sans-serif!important;
+}
+
+ 
+.navbar{  
+    background-color: rgb(0, 0, 0)!important;
+}
+
+@font-face {
+    font-family: "Lucida Grande";
+    src: url(/resources/fonts/lucidagrande.ttf);
+}
+
+.navbar .navbar-brand{   
+    color: white!important;
+    font-size: large;
+    font-family:'Lucida Grande', Tahoma, Verdana, Arial, sans-serif!important;
+    padding-top: 12.5px;
+}
+
+
+.navbar .container .navbar-brand:hover{  
+    color: rgb(228, 15, 15)!important;
+}
+
+
+.navbar .navbar-nav li a{
+    color: white!important;  
+    font-size: large;
+    font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif!important;
+}
+.navbar .navbar-nav li a:hover{  
+    color:red!important;
+}
+.navbar .nav-item .dropdown-menu .dropdown-item{
+    color: rgb(2, 2, 2)!important;  
+    background-color: white!important;  
+}
+
+.navbar .nav-item .dropdown-menu .dropdown-item:hover{
+    color: rgb(2, 2, 2)!important;
+    background-color: red!important;
+}
+
+
+
+.navbar-toggler{
+    background-color: #FFF!important;  
+}
+
+ 
+
+.hero-body {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    }
+ 
+.hero.is-info {
+    background-color: white;
+}
+    
+.hero.is-info .text{
+    color: white;
+    font-family:   sans-serif!important;
+}
+ 
+
+.hero.is-info .title{
+    color: rgb(228, 15, 15);
+    font-family: "Lucinda Grande";
+    
+}
+
+ 
+.card .card-title {  
+    color: black;
+    font-size: 2.2rem;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.card{
+    background-color: white!important;
+    border-color: rgb(165, 165, 165)!important;
+}
+.card .card-link{
+    color: rgb(117, 117, 117)!important;
+    font-size: 1.9rem;
+}
+
+ 
+.pagination-link.is-current{
+    background-color: #4a4a4a!important;
+    color: white!important;
+    border-color: #4a4a4a!important;
+}
+
+
+
+</style>
+
+</head>
+
+
+<body>
+
+    
+    
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+        <a class="navbar-brand h1 mb-0 " href="/">Início</a> 
+        
+        <button class="navbar-toggler ml-auto navbar-light" type="button" data-toggle="collapse" data-target="#navbarSite" aria-controls="navbarToggleExternalContent" aria-expanded="false"> 
+            <span class="navbar-toggler-icon"></span> 
+        </button>
+       
+           <div class="collapse navbar-collapse" id="navbarSite">
+            <ul class="navbar-nav mr-auto"> 
+                
+                    
+                
+                <div class="navbar-collapse collapse navbar-expand-lg" id="navbarSite">
+                    <ul class="navbar-nav mr-auto">
+                        
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/perfil">Sobre</a>
+                    </li>
+                        
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/recomendacao">Leituras Indicadas</a>
+                    </li>
+                        
+                    </ul>
+                </div>
+
+            </ul>
+
+    
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">Software</a>
+                
+                    <ul class="dropdown-menu" >
+                        <a href="https://www.qgis.org/pt_BR/site/" class="dropdown-item active">QGIS</a>
+                        <a href="https://geodacenter.github.io/" class="dropdown-item">GeoDa</a>
+                        <a href="https://www.tug.org/texlive/" class="dropdown-item">LaTex - TeX Live</a>
+                        <a href="https://www.r-project.org/" class="dropdown-item">R</a>
+                        <a href="https://www.anaconda.com/" class="dropdown-item">Python - Anaconda</a>
+                    </ul>
+
+
+                </li>
+
+
+
+            </ul>
+                
+        </div>
+    </div>
+    </nav>
+
+        
+        <section class="hero is-info is-medium">
+            <div class="hero-body" style="background-image: url(/img/bg-blog.jpg);">
+ 
+
+                  <div class="container has-text-centered">
+                   </h1>
+                    <br>
+                    <h1 class="text is-size-1">
+                        
+                            Classes e Objetos em R
+                        
+                    </h1>
+                    
+                </div>
+            </div>
+
+
+
+
+
+
+<div class="container">
+    <div class="section">
+    
+
+<div class="columns">
+    <div class="column is-9">
+        <div class="tile is-child box">
+            <div class="content">
+                
+
+
+<h3 style="color:black; font-family:sans-serif;">
+Introdução
+</h3>
+<p style="color:black; font-family:sans-serif;margin-bottom: 5px;">
+Muitos usuários possuem medo ou receio ao se deparar com a necessidade de digitar comandos, tanto no terminal do R, quanto na interface gráfica do Rstudio. É possível que o usuário possua dificuldade em <em>decorar</em> comando, mas isso é besteira. O Rstudio já facilita um bocado ao sugerir a função quando começamos a digitar, então, quando aparecer a sugestão é só apertar a tecla <em>tab</em> ou <em>enter</em> do teclado. Um outro recurso muito eficiente é a utilização do <em>help</em>, que auxilia no entendimento dos argumentos da função que estamos aplicando, e que pode ser acessado diretamente pela interface gráfica do Rstudio, ou simplesmente colocando um sinal de interrogação e o nome do comando que estamos com dificuldade, como por exemplo: <span style="color:red"><b><em>? paste0</em></b></span> ou também <span style="color:red"><b><em>?? paste0</em></b></span>. A janela de ajuda também pode ser acessada em html com o comando <em>help.start()</em>.
+</p>
+<p style="color:black; font-family:sans-serif;margin-bottom: 10px;">
+Outra maneira em se obter ajuda é realizar uma busca no site <a href="https://pt.stackoverflow.com/" style="color:blue">Stack Overflow</a> em português ou
+<a href="https://stackoverflow.com/" style="color:blue">inglês</a>. Sugiro você tentar resolver sozinho o seu problema por meio da lógica antes de realizar uma busca! Isso é muito importante para não se tornar um usuário chato e preguiçoso, isto é, aqueles que colocam dúvidas triviais, sendo que muitas respostas podem ser encontradas na documentação dos pacotes que estão disponíveis nos seus respectivos repositórios. Isso mesmo, estou sugerindo tentar, tentar e tentar sozinho antes de pedir <em>socorro</em>. Contudo, quando não houver jeito, procure no site do <em>Stack</em> ou no próprio Google, com certeza alguém já realizou algo parecido. Nesse caso, a minha melhor dica é olhar a resposta e <em>digitar</em> ao invés de copiar e colar o código, isso irá lhe ajudar a entender o que está fazendo e da próxima vez que precisar, irá estar fresco em sua memória.
+</p>
+<p style="color:black; font-family:sans-serif;margin-bottom: 10px;">
+Após divagar um pouco, voltarei ao assunto do post de hoje. Tudo o que fazemos dentro do R será um objeto. Podemos pensar um pouco mais a fundo sobre o que é de fato um objeto. A grosso modo, um objeto é uma estrutura de dados ou informações que armazenamos dentro do R e que possui atributos e funções específicas. Os atributos são características de um objeto e que determinam qual tipo de função podemos utilizar nesse objeto. Para exemplificar um pouco, imagine que você tenha um cortador de unha com uma lixa embutida e que o guarda em sua bolsa. Nesse caso ele possui dois atributos: <em>lixa</em> e a <em>lâmina</em>, e será armazenado na sua bolsa. Com esse objeto, podemos utilizar os atributos para fazer (função) duas coisas: cortar ou lixar.
+</p>
+<p style="color:black; font-family:sans-serif;margin-bottom: 10px;">
+Os objetos dentro do R não é diferente. Os objetos devem ser trabalhados de acordo com as suas características e também dependem do tipo de pacote ou função que foi utilizado para importar ou criá-lo, sendo mais comum vermos objetos da classe ‘character’, ‘numeric’,‘integer’,‘logical’,‘complex’,‘factor’,‘date’, ‘data.frame’, ‘vector’, ‘matrix’, ‘<em>array</em>’, ‘list’ e funções anônimas. Dentro de cada objeto ainda podemos observar qual é o tipo de atributo. Podemos nos defrontar com outros tipos de objetos, tais como <em>rasters</em> e <em>SHP</em>. Em suma, os objetos são símbolos ou variáveis utilizados para armazenar valores e possuem certas especificidades.
+</p>
+<h3 style="color:black; font-family:sans-serif;">
+Objetivo:
+</h3>
+<p style="color:black; font-family:sans-serif;margin-bottom: 30px;">
+O objetivo deste post é apresentar os mais comuns tipos de objetos e suas principais características. Vamos aprender a verificar as classes de objetos e como alterá-las.
+</p>
+<h3 style="color:black; font-family:sans-serif;">
+Diferença de atribuição e igualdade
+</h3>
+<p style="color:black; font-family:sans-serif;margin-bottom: 10px;">
+Em R podemos utilizar dois tipos de símbolos para atribuição de valores em variáveis:
+</p>
+<pre class="r bordepre"><code>b &lt;- 4
+a = 2
+c &lt;- &quot;texto&quot;
+D &lt;- &quot;50&quot;</code></pre>
+<p style="color:black; font-family:sans-serif;margin-bottom: 15px;">
+Nesses dois casos estamos dizendo que o <strong>objeto</strong> <span style="color:red"><b>b</b></span> <em>recebe</em> o valor 4 e que <span style="color:red"><b>a</b></span> <em>recebe</em> o valor 2. Ou seja, podemos utilizar os dois sinais, contudo, deve-se atentar que estamos <strong>atribuindo</strong> valores, e neste momento, não queremos nos referir a igualdade. Como temos dois objetos em nosso <em>workspace</em>, vamos aproveitar para ver qual é a classe deles com o comando <span style="color:red"><b>class</b></span>. A igualdade é uma condição que será representada por <strong>==</strong> e retomarei em futuros posts sobre condicionais e operadores lógicos.
+</p>
+<pre class="r bordepre"><code>class(a)</code></pre>
+<pre class="bordepos"><code>## [1] &quot;numeric&quot;</code></pre>
+<pre class="r bordepre"><code>class(b)</code></pre>
+<pre class="bordepos"><code>## [1] &quot;numeric&quot;</code></pre>
+<pre class="r bordepre"><code>class(c)</code></pre>
+<pre class="bordepos"><code>## [1] &quot;character&quot;</code></pre>
+<pre class="r bordepre"><code>class(D)</code></pre>
+<pre class="bordepos"><code>## [1] &quot;character&quot;</code></pre>
+<p style="color:black; font-family:sans-serif;margin-bottom: 15px;margin-top: 15px;">
+Note que para o objeto <strong>c</strong> foi atribuído o valor <strong>texto</strong> entre aspas duplas (poderia ser aspas simples). Isso quer dizer que estamos atribuindo um valor do tipo texto/ <em>string</em>. É por isso que o resultado do <strong>class()</strong> foi “character”, portanto, todo tipo de texto ou caractere terá a classe “character”. Um ponto a ser destacado é que atribui o valor 50 ao objeto <strong>D</strong>, contudo, como o valor atribuído está entre aspas, o R interpretará como da classe “character”. Podemos dizer que no R tudo gira em torno de um <strong>objeto</strong> e que cada objeto possuirá uma <strong>classe</strong>. Vou definir classe como sendo a característica do objeto, sendo essa característica que irá definir como ele será tratado pelas funções que serão aplicadas.
+</p>
+<p style="color:black; font-family:sans-serif;margin-bottom: 15px;">
+Em R existem tipos mais comuns de objetos aos quais nos deparamos com frequência. O mais básico de todos é o vetor, da classe “vector”, podendo assumir algumas características:
+</p>
+<ol>
+<li>
+<span style="color:green"><b>vector</b></span>: é um objeto unidimensional e que necessariamente deverão ser da mesma classe, por exemplo, devemos ter uma sequência somente numérica ou de caracteres, nunca os dois em conjunto. Mais adiante mostrarei um problema de objetos com classes diferentes. Uma coluna de um data.frame também pode ser considerado um vetor. Podemos chamar os vetores que atendem essa condição de “Vetores Atômicos”. Já utilizamos anteriormente um vetor, mas decidi deixar a explicação a partir desse ponto. Para incluirmos manualmente um vetor com os números 1,2,3,4,5, devemos colocar essa sequência de 1 a 5 dentro da expressão concatenar: <span style="color:green"><b>c(…)</b></span>:
+</li>
+<pre class="r bordepre"><code>sequencia &lt;- c(1,2,3,4,5) # Criando um vetor
+is.vector(sequencia)      # Verificando se é um vetor</code></pre>
+<pre class="bordepos"><code>## [1] TRUE</code></pre>
+<pre class="r bordepre"><code>1:5 # Essa é uma outra maneira de gerar uma seqência numérica</code></pre>
+<pre class="bordepos"><code>## [1] 1 2 3 4 5</code></pre>
+<li>
+<span style="color:green"><b>character</b></span>: um vetor também pode conter letras, palavras ou textos em geral;
+</li>
+<pre class="r bordepre"><code>a &lt;- c(&#39;a&#39;,&#39;b&#39;,&#39;c&#39;,&#39;d&#39;,&#39;e&#39;) # Criando um vetor  de strings
+class(a)</code></pre>
+<pre class="bordepos"><code>## [1] &quot;character&quot;</code></pre>
+<li>
+<span style="color:green"><b>numeric</b></span>: como o próprio nome já diz, os valores contidos nessa classe de vetor são numéricos. Dentro dessa classe podemos encontrar o ‘integer’ e ‘double’, dependendo de determinas circunstâncias, o R realiza automaticamente a codificação da variável.
+</li>
+<pre class="r bordepre"><code>b &lt;- c(5,10,20,50,80)
+class(b)</code></pre>
+<pre class="bordepos"><code>## [1] &quot;numeric&quot;</code></pre>
+<li>
+<span style="color:green"><b>integer</b></span>: essa é a classe de um vetor cujos valores numéricos são inteiros, isto é, não possuem decimais. Para forçarmos que a entrada dos números sejam entendidos como números “inteiros”, devemos incluir a letra <strong>L</strong> após o número. Repare que coloquei exatamente o mesmo vetor <strong>b</strong>, mas o R havia selecionado automaticamente a classe numérica, e agora forçando a ser da classe “integer” com a inclusão do L. Uma outra maneira seria utilizar a função <span style="color:red"><b>as.integer()</b></span>.
+</li>
+<pre class="r bordepre"><code>c &lt;- c(5L,10L,20L,50L,80L) 
+class(c)</code></pre>
+<pre class="bordepos"><code>## [1] &quot;integer&quot;</code></pre>
+<pre class="r bordepre"><code>C &lt;- as.integer(b) # Forçando o vetor b ser da classe integer
+class(C)</code></pre>
+<pre class="bordepos"><code>## [1] &quot;integer&quot;</code></pre>
+<li>
+<span style="color:green"><b>logical</b></span>: é um vetor que contém valores que resultam de algum tipo de condição, que serão basicamente “TRUE” ou “FALSE”. Por exemplo, ao verificarmos se objeto “a” é da classe numérica com a função <span style="color:red"><b>is.numeric()</b></span>, obteremos um objeto da classe “logical”.
+</li>
+<pre class="r bordepre"><code>d &lt;- is.numeric(a) # Verificando se o objeto &quot;a&quot; é da classe &quot;numérica&quot;
+class(d)</code></pre>
+<pre class="bordepos"><code>## [1] &quot;logical&quot;</code></pre>
+<pre class="r bordepre"><code>D &lt;- is.character(a) # Verificando se o objeto &quot;a&quot; é da classe &quot;character&quot;
+class(D)</code></pre>
+<pre class="bordepos"><code>## [1] &quot;logical&quot;</code></pre>
+<li>
+<span style="color:green"><b>complex</b></span>: também é uma classe de um vetor que representa os números complexos, como por exemplo: <b>9+12i</b>.
+</li>
+<pre class="r bordepre"><code>e &lt;-  9+12i
+class(e)</code></pre>
+<pre class="bordepos"><code>## [1] &quot;complex&quot;</code></pre>
+<li>
+<span style="color:green"><b>factor</b></span>: é a classe de uma variável que possui a característica de assumir uma quantidade de valores limitados. Basicamente, é uma variável categórica e geralmente são números inteiros e que podem ser visualizados por meio de <em>labels</em>. Para esse caso, vou exemplificar com a função que cria uma variável categórica que assumirá os níveis (levels) 1, 2 e 3, e o label será uma <em>string</em> com os respectivos valores: “Hoje”, “Amanhã” e “Ontem”. A função <em>factor</em> necessita de basicamente 3 argumentos: 1) <em>x</em> = variável de interesse; 2) <em>levels</em> será os valores que essa variável pode assumir; 3) <em>labels</em> será o rótulo que cada nível receberá.
+</li>
+<pre class="r bordepre"><code>g &lt;- factor(x=c(1,2,3,2,3),levels = c(1,2,3),labels = c(&quot;Hoje&quot;, &quot;Amanhã&quot; , &quot;Ontem&quot;))
+class(g)</code></pre>
+<pre class="bordepos"><code>## [1] &quot;factor&quot;</code></pre>
+<li>
+<span style="color:green"><b>Date</b></span>: é interpretado como data. Também pode-se entender como alguma forma de ordenação no tempo com algum tipo específico de formatação (mês, dia, ano, hora, etc.);
+</li>
+<pre class="r bordepre"><code>h &lt;- as.Date(&quot;2020-02-14&quot;)
+class(h)</code></pre>
+<pre class="bordepos"><code>## [1] &quot;Date&quot;</code></pre>
+<li>
+<span style="color:green"><b>data.frame</b></span>: é um objeto da classe “data.frame”, que representa um conjunto de dados, mais especificamente, um “quadro” de dados. Esse objeto abrigará uma ou várias variáveis (colunas ou vetores) com nomes de linhas exclusivas. Caso não sejam indicados os nomes das linhas, assume-se que os nomes serão os próprios <em>números</em> das linhas. Por outro lado, serão permitidos nomes repetidos para as colunas. Mas isso não é <span style="color:red"><b>recomendável!</b></span>. Para exemplificar, vou utilizar um conjunto de dados de exemplo que o próprio R-base contém, o famoso <strong>cars</strong>. Inicialmente podemos ver um pedaço inicial desse conjunto de dados com o comando <em>head</em>, que nos mostra as linhas iniciais e todas as colunas de um data frame:
+</li>
+<pre class="r bordepre"><code>head(cars) # Visualizando a estrutura básica de um data frame</code></pre>
+<pre class="bordepos"><code>##   speed dist
+## 1     4    2
+## 2     4   10
+## 3     7    4
+## 4     7   22
+## 5     8   16
+## 6     9   10</code></pre>
+<pre class="r bordepre"><code>class(cars) # Visualizando a classe do objeto &quot;cars&quot;</code></pre>
+<pre class="bordepos"><code>## [1] &quot;data.frame&quot;</code></pre>
+<li>
+<span style="color:green"><b>matrix</b></span>: Como o próprio nome já diz, são matrizes. “matrix” é um objeto que é bidimensional e possui uma classe específica para manipulações matriciais. Assim como o data.frame, o objeto da classe “matrix” deve possuir o mesmo número de linhas e serem da mesma classe (números ou caracteres).
+</li>
+<pre class="r bordepre"><code>m &lt;- matrix(1:6, nrow=2, ncol =3) # Criando uma matriz para exemplo
+class(m)</code></pre>
+<pre class="bordepos"><code>## [1] &quot;matrix&quot;</code></pre>
+<pre class="r bordepre"><code>print(m) # Visualizando a matriz de exemplo</code></pre>
+<pre class="bordepos"><code>##      [,1] [,2] [,3]
+## [1,]    1    3    5
+## [2,]    2    4    6</code></pre>
+<li>
+<span style="color:green"><b>array</b></span>: é uma forma bem mais generalista de de matriz, só que agora com <em>n</em>-dimensões. Também aceitam apenas tipos específicos de valores, os numéricos ou caracteres. Para exemplificar, vou criar um array com 3 linhas, 2 colunas e 2 dimensões (3x2x2).
+</li>
+<pre class="r bordepre"><code>arr &lt;- array(1:12, dim = c(3, 2, 2)) # Criando um array para exemplo
+class(arr)</code></pre>
+<pre class="bordepos"><code>## [1] &quot;array&quot;</code></pre>
+<pre class="r bordepre"><code>print(arr) # Visualizando a matriz de exemplo</code></pre>
+<pre class="bordepos"><code>## , , 1
+## 
+##      [,1] [,2]
+## [1,]    1    4
+## [2,]    2    5
+## [3,]    3    6
+## 
+## , , 2
+## 
+##      [,1] [,2]
+## [1,]    7   10
+## [2,]    8   11
+## [3,]    9   12</code></pre>
+<li>
+<p><span style="color:green"><b>list</b></span>: não necessariamente é uma classe de objeto, mas uma estrutura pela qual organizamos um objeto. Em outras palavras, um objeto cuja estrutura seja uma lista, podemos armazenar muitos outro objetos de diferentes classes, como por exemplo, uma lista pode conter matriz, data.frame, vetor, array ou até mesmo outra lista de listas de objetos! Para exemplificar, vamos supor que uma lista seja uma mala com infinitos compartimentos, e que cada compartimento poderá armazenar apenas um objeto, logicamente, cada compartimento vai herdar a classe do respectivo objeto que abrigará. Para criarmos uma lista, podemos utilizar a função <strong>list()</strong> e incluir os objetos criados anteriormente dentro do parêntesis, separando-os por vírgula.</p>
+<pre class="r bordepre"><code>lista &lt;- list(a,b,c,d,e,g)</code></pre>
+<p>Para visualizar a lista, podemos simplesmente executar diretamente o nome “lista” ou utilizar a função “print”. Uma outra maneira, que não se restringe a lista, e pode ser utilizada para visualizar todos os outros objetos criados anteriormente, é a aplicação da função <strong>View()</strong>. No caso dos dois primeiros procedimentos, os resultados aparecerão no console e para o último, o objeto será aberto em uma nova aba dentro do próprio Rstudio. Podemos visualizar ou printar objetos isolados de listas, indicando a posição que o mesmo se encontra dentro da lista. Por exemplo, vamos ver somente o segundo objeto da lista (no caso é objeto b).</p>
+<pre class="r bordepre"><code>lista[[2]]</code></pre>
+<pre class="bordepos"><code>## [1]  5 10 20 50 80</code></pre>
+<pre class="r bordepre"><code>print(lista[[2]]) # Ou utilizando o print()</code></pre>
+<pre class="bordepos"><code>## [1]  5 10 20 50 80</code></pre>
+</li>
+</ol>
+<p style="color:black; font-family:sans-serif;margin-bottom: 15px;">
+O R permite que a alteração ou coerção das classes dos objetos. Suponha temos o vetor c(1,2,3,“Palavra”,“Letra”), qual será a classe que o R indicará automaticamente? Lembre-se que devemos ter vetores somente de uma única classe, logo, quando misturamos <em>strings</em> com números, o R tentará forçar uma classe automaticamente, e nesse caso, foi para a classe <em>character</em>. Mas imagine a situação em que você recebe um conjunto de dados e precisa realizar algum cálculo, digamos, o cálculo da média. Como poderíamos contornar esse problema? Simplesmente aplicando uma função que converte o vetor para uma classe de interesse, no caso, para a classe numeric com a função <strong>as.numeric</strong>:
+</p>
+<pre class="r bordepre"><code>vet &lt;- c(1,2,3,&quot;Palavra&quot;,&quot;Letra&quot;) # Criando um vetor
+class(vet) # Visualizando a classe</code></pre>
+<pre class="bordepos"><code>## [1] &quot;character&quot;</code></pre>
+<pre class="r bordepre"><code>vetNumerico &lt;- as.numeric(vet) # Convertendo para a classe numérica</code></pre>
+<pre><code>## Warning: NAs introduzidos por coerção</code></pre>
+<pre class="r bordepre"><code>mean(vetNumerico) # Calculando a média</code></pre>
+<pre class="bordepos"><code>## [1] NA</code></pre>
+<p style="color:black; font-family:sans-serif;margin-bottom: 15px;">
+Perceba que o R informou um “Warning message”, indicando que alguns “<span style="color:red"><b>NAs</b></span>” foram introduzidos por coerção. Esse exemplo nos mostra um outro tipo de valor que o R interpretará como valor faltante, podemos chamar esses valores de <em>missing</em> e são representados por <strong>NA</strong> (sigla para <em>not available</em>). Mas por que surgiu esse problema? Lembra que os vetores devem conter apenas um tipo de classe? Então, como convertemos para numérico, o R removeu as <em>strings</em> “Palavra” e “Letra” e os substituiu por <strong>NA</strong>. Logo, o a função que iria calcular a média não se comportou da forma como era esperado. Para contornar esse outro problema, devemos incluir um outro argumento dentro da função <strong>mean</strong>, <span style="color:red"><b>na.rm=TRUE</b></span>, que indicará para o R desconsiderar os valores faltantes no cálculo da média.
+</p>
+<pre class="r bordepre"><code>mean(vetNumerico, na.rm = TRUE) # Calculando a média</code></pre>
+<pre class="bordepos"><code>## [1] 2</code></pre>
+<pre class="r bordepre"><code>mean(vetNumerico,na.rm = T) # Ou abreviando a palavra &quot;TRUE&quot; por &quot;T&quot;</code></pre>
+<pre class="bordepos"><code>## [1] 2</code></pre>
+<p style="color:black; font-family:sans-serif;margin-bottom: 15px;">
+Uma outra maneira seria utilizar a função que omite os valores <em>NA</em> e posteriormente aplicar a função <strong>mean</strong>. Em alguns casos isso pode ser interessante, mas na maioria das vezes estamos trabalhando com data frames e isso irá omitir linhas de outras colunas, o que poderá gerar um problema ainda maior.
+</p>
+<pre class="r bordepre"><code>omitido &lt;- na.omit(vetNumerico)
+mean(omitido)</code></pre>
+<pre class="bordepos"><code>## [1] 2</code></pre>
+<p style="color:black; font-family:sans-serif;margin-bottom: 15px;">
+Suponhamos ainda uma situação onde devemos converter um vetor da classe <em>factor</em> para <em>character</em>. Como devemos proceder? Simplesmente com a função <strong>as.character</strong>.
+</p>
+<pre class="r bordepre"><code>FacParaCharc &lt;- as.character(g) # Convertendo para character
+class(FacParaCharc)             # Verificando a classe</code></pre>
+<pre class="bordepos"><code>## [1] &quot;character&quot;</code></pre>
+<p style="color:black; font-family:sans-serif;margin-bottom: 15px;">
+E se caso o objetivo fosse recuperar apenas os números do objeto “g”? E para situações onde já existe uma variável categórica numérica e queremos converte-la para <em>factor</em> sem nos preocuparmos com os rótulos, mas apenas com a quantidade de valores que ela assume?
+</p>
+<pre class="r bordepre"><code>FacParaNum &lt;- as.numeric(g) # Convertendo para numeric
+class(FacParaNum)           # Verificando a classe</code></pre>
+<pre class="bordepos"><code>## [1] &quot;numeric&quot;</code></pre>
+<pre class="r bordepre"><code>Convertido &lt;- as.factor(c(1,2,3,4,2,1))
+class(Convertido)</code></pre>
+<pre class="bordepos"><code>## [1] &quot;factor&quot;</code></pre>
+<p style="color:black; font-family:sans-serif;margin-bottom: 15px;">
+Esse tipo de classe pode parecer um pouco confusa ou sem utilidade para os usuários iniciantes, mas na realidade ela é muito importante na elaboração de gráficos e tabelas.
+</p>
+<h3 style="color:black; font-family:sans-serif;">
+Conclusão
+</h3>
+<p style="color:black; font-family:sans-serif;margin-bottom: 5px">
+No post de hoje apresentei conceitos sobre as principais classes e estrutura de objetos em R. Alguns conceitos são muito intuitivos, outros já parecem abstratos, como por exemplo o <em>array</em> e o <em>list</em>. A mudança de classe dos vetores deve ser realizada de forma muito cuidadosa para que não ocorram distorções ou erros nas análises. No próximo post vou mostrar funções específicas para cada tipo de objeto, e bem como, operações básicas comumente utilizadas na linguagem R.
+</p>
+<style type="text/css">
+<style>
+.h3{
+ margin-top: 10px;
+ margin-bottom: 10px;
+}  
+
+li{
+  color:black; 
+  font-family:sans-serif;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.bordepre{
+  border: solid;
+  border-style:solid;
+  border-width: thin;
+  border-color: #A8A8A8;
+  font-size: 12px;
+  padding: 1mm;
+  color: black;
+  font-weight: normal;
+  background-color:#F5F5F5;
+    
+}
+.bordepos {
+  border: solid;
+  border-style:solid;
+  border-width: thin;
+  border-color: #A8A8A8;
+  color: black;
+  background-color:#F5F5F5;
+  padding: 1mm;
+  font-size: 12px;
+  
+  
+}
+</style>
+</style>
+
+            </div>
+        </div>
+    </div>
+    <div class="column is-3">
+        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+    <div class="card-body">
+        <h1 class="card-title is-5">Tags</h1>
+        <div class="tags">
+        
+            <span class="tag "><a href="/tags/r">r</a></span>
+        
+            <span class="tag "><a href="/tags/rstudio">rstudio</a></span>
+        
+        </div>          
+    </div>
+</div>
+
+<br>
+        <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
+    <div class="card-body">
+        <h1 class="card-title is-5">Posts Recentes</h1>
+        
+            <h1 class="card-link"><a href="/post/classes-e-objetos-em-r/">Classes e Objetos em R</a></h1>
+            <time class="has-text-grey-light is-size-7">17 February 2020</time>
+        
+            <h1 class="card-link"><a href="/post/instalando-o-r-e-rstudio/">Instalando o R e Rstudio</a></h1>
+            <time class="has-text-grey-light is-size-7">31 January 2020</time>
+        
+    </div>
+</div>
+    <br>
+                
+  
+
+
+
+<div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
+  <div class="card-body">
+        <h1 class="card-title is-5">Posts relacionados</h1>
+      
+      
+            <h1 class="card-link"><a href="/post/instalando-o-r-e-rstudio/">Instalando o R e Rstudio</a></h1>
+            <time class="has-text-grey-light is-size-7">31 January 2020</time>
+      
+    </div>
+</div>
+
+    
+<br>
+        <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
+    <div class="card-body">
+        <h1 class="card-title is-5">Arquivos</h1>
+        
+            <a class="card-link" href="/archives/2020">2020</a> (2)<br>
+        
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+    </div>
+</div>
+
+<footer class="footer has-background-grey-darker has-text-white">
+    <div class="content has-text-centered">
+        <p>
+            <span class="icon is-large"><a href="https://www.facebook.com/william.barbosapg" class="mysocial" rel="me"><i class="fab fa-facebook fa-3x"></i></a></span>&nbsp;&nbsp;
+            <span class="icon is-large"><a href="https://www.youtube.com/" class="mysocial" rel="me"><i class="fab fa-youtube fa-3x"></i></a></span>&nbsp;&nbsp;
+            <span class="icon is-large"><a href="https://github.com/william-barbosa" class="mysocial" rel="me"><i class="fab fa-github fa-3x"></i></a></span>&nbsp;&nbsp;
+            <span class="icon is-large"><a href="https://linkedin.com/in/william-barbosa-796309179/" class="mysocial" rel="me"><i class="fab fa-linkedin fa-3x"></i></a></span>&nbsp;&nbsp;
+            <br><br>
+            Copyright &copy; Código Livre Economy 2020 - Criado por <a href="https://linkedin.com/in/william-barbosa-796309179" class="mysocial">William Barbosa</a>
+           
+        </p>
+    </div>
+</footer>
+
+<script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+</body>
+</html>

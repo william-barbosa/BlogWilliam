@@ -5,10 +5,19 @@
     <description>Recent content in Posts on Código Livre Economy</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2018–2020, @william-barbosa</copyright>
-    <lastBuildDate>Fri, 31 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 17 Feb 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Classes e Objetos em R</title>
+      <link>/post/classes-e-objetos-em-r/</link>
+      <pubDate>Mon, 17 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/classes-e-objetos-em-r/</guid>
+      <description>IntroduçãoMuitos usuários possuem medo ou receio ao se deparar com a necessidade de digitar comandos, tanto no terminal do R, quanto na interface gráfica do Rstudio. É possível que o usuário possua dificuldade em decorar comando, mas isso é besteira. O Rstudio já facilita um bocado ao sugerir a função quando começamos a digitar, então, quando aparecer a sugestão é só apertar a tecla tab ou enter do teclado.</description>
+    </item>
     
     <item>
       <title>Instalando o R e Rstudio</title>

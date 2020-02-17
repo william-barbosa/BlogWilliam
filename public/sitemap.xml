@@ -4,41 +4,46 @@
   
   <url>
     <loc>/archives/2020/</loc>
-    <lastmod>2020-01-31T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/archives/</loc>
-    <lastmod>2020-01-31T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/classes-e-objetos-em-r/</loc>
+    <lastmod>2020-02-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2020-01-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/instalando-o-r-e-rstudio/</loc>
-    <lastmod>2020-01-31T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2020-01-31T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/r/</loc>
-    <lastmod>2020-01-31T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/rstudio/</loc>
-    <lastmod>2020-01-31T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/</loc>
+    <lastmod>2020-02-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/instalando-o-r-e-rstudio/</loc>
     <lastmod>2020-01-31T00:00:00+00:00</lastmod>
   </url>
   
